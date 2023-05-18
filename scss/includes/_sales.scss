@@ -1,0 +1,33 @@
+.sales {
+	display: grid;
+	grid-gap: 85px;
+
+	&__item {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px;
+
+		@media(max-width: 991px) {
+			grid-gap: 20px;
+		}
+
+		@media(max-width: 700px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__picture {
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__form {
+		margin-top: 40px;
+
+		@media(max-width: 991px) {
+			margin-top: 30px;
+		}
+	}
+}

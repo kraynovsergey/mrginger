@@ -1,0 +1,115 @@
+.home-content {
+	padding: 140px 0;
+	position: relative;
+	overflow: hidden;
+
+	@media (max-width: 700px) {
+		padding: 50px 0;
+	}
+
+	&__cols {
+		margin: 0 -15px;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 700px) {
+			margin: 0;
+			flex-direction: column;
+			align-items: stretch;
+		}
+	}
+
+	&__col {
+		padding: 0 15px;
+		width: 50%;
+
+		@media (max-width: 700px) {
+			padding: 0;
+			width: 100%;
+		}
+	}
+
+	&__picture {
+		display: block;
+		position: relative;
+
+		@media (max-width: 700px) {
+			margin-bottom: 20px;
+		}
+
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	& .h1 {
+		position: relative;
+
+		@media (max-width: 700px) {
+			display: none;
+		}
+	}
+
+	& p {
+		position: relative;
+	}
+
+	&__title-mobile {
+		display: none;
+
+		@media (max-width: 700px) {
+			display: block !important;
+			text-align: center;
+		}
+	}
+
+	&__list {
+		position: absolute;
+
+		&:nth-child(1) {
+			left: 15%;
+			top: 5%;
+
+			@media (max-width: 700px) {
+				left: -25%;
+				top: 0;
+			}
+		}
+
+		&:nth-child(2) {
+			left: 44%;
+			top: 20%;
+
+			@media (max-width: 700px) {
+				left: 85%;
+				top: 0;
+			}
+		}
+
+		&:nth-child(3) {
+			left: 90%;
+			top: 35%;
+		}
+
+		&:nth-child(4) {
+			left: 10%;
+			top: 85%;
+
+			@media (max-width: 700px) {
+				left: 10%;
+				top: 90%;
+			}
+		}
+
+		&:nth-child(5) {
+			left: 50%;
+			top: 80%;
+
+			@media (max-width: 700px) {
+				left: 85%;
+				top: 85%;
+			}
+		}
+	}
+}

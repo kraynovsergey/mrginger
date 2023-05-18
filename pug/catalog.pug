@@ -1,0 +1,17 @@
+extends base
+
+block seo
+    - var seo = {title: 'Каталог', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    include includes/_categories
+
+    include includes/_catalog
+
+    include includes/_interesting
+
+    include includes/_home-content
+
+    include includes/_home-pluses

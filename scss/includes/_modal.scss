@@ -1,0 +1,98 @@
+.fancybox__backdrop {
+	background: rgba(0,0,0,.4);
+}
+
+.modal {
+	display: none;
+	width: 100%;
+	max-width: 600px;
+	background: $color_background_card;
+	border-radius: 15px;
+	padding: 50px 30px 30px;
+
+	&__thankyou {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__icon {
+		margin-bottom: 20px;
+
+		& svg {
+			fill: $color_secondary;
+		}
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	&__text {
+		font-size: 1.14rem;
+		margin: 0;
+		width: 100%;
+	}
+
+	&__btns {
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		@media (max-width: 700px) {
+			flex-direction: column;
+		}
+
+		&._center {
+			justify-content: center;
+		}
+	}
+
+	&__btn {
+		width: 47%;
+		height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.14rem;
+		border-radius: 50px;
+		text-decoration: none;
+
+		@media (max-width: 700px) {
+			width: 100%;
+			margin-bottom: 17px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&._bordered {
+			background: transparent;
+			border: 2px solid $color_secondary;
+			color: $color_secondary;
+
+			&:hover {
+				background: $color_secondary;
+				color: $color_background_card;
+			}
+		}
+
+		&._blue {
+			background: $color_secondary;
+			color: $color_background_card;
+
+			&:hover {
+				background: $color_grey;
+			}
+
+			& svg {
+				stroke: $color_background_card;
+				margin-left: 15px;
+			}
+		}
+	}
+}

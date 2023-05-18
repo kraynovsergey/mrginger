@@ -1,0 +1,47 @@
+extends base
+
+block seo
+    - var seo = {title: 'Акции', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    mixin sale(title)
+        article.sales__item(role="article")
+            .sales__content.text
+                h2.sales__title(role="heading")= title
+                p Условия акции
+                p Доставка производится ежедневно в 3-х часовом (на выбор) интервале.
+                p Москва: от 450 до 800 руб. в зависимости от удаленности от нас
+                p За МКАД: 650 руб. +40 руб. за каждый км.
+                p Заказчик обязуется принять и оплатить поставленный товар в соответствии с условиями согласованного заказа. В случае отсутствия Заказчика или его доверенного лица по адресу доставки в назначенную дату и диапазон времени, по истечении 15 минут ожидания представитель Исполнителя вправе покинуть место доставки без осуществления отгрузки товара.
+                p В случае повторной доставки (если она укладывается в маршрут курьера ), она оплачивается Заказчиком дополнительно. При отсутствии по указанному заказчиком адресу парковки, заказчик обязуется встретить курьера возле машины и принять торт.
+            +picture('sales__picture', 'jpeg',
+                'img/tmp/webp/sale@2x.webp', 'img/tmp/webp/sale.webp',
+                'img/tmp/sale@2x.jpg', 'img/tmp/sale.jpg', 540, 479)
+
+    section.section
+        .container
+            h1._center Акции
+
+            .sales
+                +sale('Бесплатная доставка')
+                +sale('Скидки за самовывоз')
+                +sale('Специальные цены')
+
+                article.sales__item(role="article")
+                    .sales__content.text
+                        h2.sales__title(role="heading") Создайте свой уникальный торт
+                        p Если вы хотите торт по собственному эскизу, заполните форму и мы свяжемся с вами.
+                        form.form.sales__form(action="#" method="post" role="form")
+                            fieldset.form__fieldset
+                                label.order__label(for="sales-name") Ваше имя
+                                input.input(type="text" name="name" id="sales-name")
+                            fieldset.form__fieldset
+                                label.order__label(for="sales-phone") Номер телефона
+                                input.input(type="tel" name="phone" id="sales-phone")
+                            button.btn(type="submit" role="button") Отправить
+
+                    +picture('sales__picture', 'jpeg',
+                        'img/tmp/webp/sale@2x.webp', 'img/tmp/webp/sale.webp',
+                        'img/tmp/sale@2x.jpg', 'img/tmp/sale.jpg', 540, 479)

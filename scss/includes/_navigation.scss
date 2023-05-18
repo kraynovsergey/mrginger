@@ -1,0 +1,27 @@
+.navigation {
+	&__btn {
+		position: absolute;
+		top: calc(50% - 30px);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background: $color_background_card;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 5;
+
+		& svg {
+			fill: $color_grey;
+		}
+
+		&._prev {
+			left: 0;
+			transform: rotate(-180deg);
+		}
+
+		&._next {
+			right: 0;
+		}
+	}
+}

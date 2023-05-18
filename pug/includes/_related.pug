@@ -1,0 +1,25 @@
+section.section.interesting
+    .container
+        .section__header-carousel._mobile-no-nav
+            +navigation('interesting__navigation', '_prev')
+            h2.h1._center Сопутствующие товары
+            +navigation('interesting__navigation', '_next')
+
+        .interesting__carousel.section__carousel.swiper._mobile-full._shadow
+            .swiper-wrapper
+                .best-products__slide.swiper-slide
+                    +product_related('product-related', 'Цифра-топпер 0', 'Альтернатива свечам-цифрам. Объёмная фольгированная фигура...', '129')
+                .best-products__slide.swiper-slide
+                    +product_related('product-related', 'Свеча цифра 1', 'Свеча на пике в форме цифры. Пусть у Вашего именинника будет...', '129')
+                .best-products__slide.swiper-slide
+                    +product_related('product-related', 'Коробка №2', 'Цвет атласной ленты может быть изменен', '129')
+                .best-products__slide.swiper-slide
+                    +product_related('product-related', 'Фонтан из 7 шаров', '', '129')
+                .best-products__slide.swiper-slide
+                    +product_related('product-related', 'Цифра-топпер 0', 'Альтернатива свечам-цифрам. Объёмная фольгированная фигура...', '129')
+                .best-products__slide.swiper-slide
+                    +product_related('product-related', 'Свеча цифра 1', 'Свеча на пике в форме цифры. Пусть у Вашего именинника будет...', '129')
+                .best-products__slide.swiper-slide
+                    +product_related('product-related', 'Коробка №2', 'Цвет атласной ленты может быть изменен', '129')
+                .best-products__slide.swiper-slide
+                    +product_related('product-related', 'Фонтан из 7 шаров', '', '129')

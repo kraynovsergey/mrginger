@@ -1,0 +1,35 @@
+.btn {
+	height: 60px;
+	padding: 0 30px;
+	background: $color_secondary;
+	border-radius: 50px;
+	color: $color_background_card;
+	font-size: 1.14rem;
+	min-width: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@media (max-width: 700px) {
+		font-size: 1.33rem;
+	}
+
+	&:hover {
+		background: $color_grey;
+	}
+
+	&._small {
+		height: 35px;
+	}
+
+	&._bordered {
+		border: 2px solid $color_secondary;
+		background: $color_background_card;
+		color: $color_secondary;
+
+		&:hover {
+			background: $color_secondary;
+			color: $color_background_card;
+		}
+	}
+}

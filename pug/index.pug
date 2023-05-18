@@ -1,0 +1,43 @@
+doctype html
+block html
+html(lang="ru")
+    head
+        block seo
+            - var seo = {title: 'Список страниц', description: '', keywords: ''}
+        include includes/_meta
+
+    body
+        div(style="width: 100vw; min-height: 100vh; display: flex; align-items: center; justify-content: center;")
+            ol(style="font-size: 1.5rem;")
+                li
+                    a(href="home.html" target="_blank") Главная страница
+                li
+                    a(href="catalog.html" target="_blank") Каталог
+                li
+                    a(href="product.html" target="_blank") Товар
+                li
+                    a(href="cart.html" target="_blank") Корзина
+                li
+                    a(href="order.html" target="_blank") Оформление заказа
+                li
+                    a(href="about.html" target="_blank") О нас
+                li
+                    a(href="articles.html" target="_blank") Статьи
+                li
+                    a(href="article.html" target="_blank") Статья
+                li
+                    a(href="reviews.html" target="_blank") Отзывы
+                li
+                    a(href="delivery.html" target="_blank") Доставка
+                li
+                    a(href="payment.html" target="_blank") Оплата
+                li
+                    a(href="contacts.html" target="_blank") Контакты
+                li
+                    a(href="filings.html" target="_blank") Начинки
+                li
+                    a(href="prices.html" target="_blank") Цены
+                li
+                    a(href="sales.html" target="_blank") Акции
+                li
+                    a(href="partners.html" target="_blank") Партнерская программа

@@ -1,0 +1,13 @@
+extends base
+
+block seo
+    - var seo = {title: 'Товар', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    include includes/_product-page
+
+    include includes/_related
+
+    include includes/_interesting

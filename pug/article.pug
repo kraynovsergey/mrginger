@@ -1,0 +1,63 @@
+extends base
+
+block seo
+    - var seo = {title: 'Статья', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    section.section
+        .container
+            h1._center Пряничные домики – оригинальный подарок на Новый год и Рождество
+
+            .about__block
+                .article__header
+                    +picture('about__picture', 'jpeg',
+                        'img/tmp/webp/article-page@2x.webp', 'img/tmp/webp/article-page.webp',
+                        'img/tmp/article-page@2x.jpg', 'img/tmp/article-page.jpg', 350, 350)
+                    .text
+                        p История сладких домиков насчитывает более 200 лет, но особую популярность и всеобщую любовь они обрели относительно недавно. Новогодний пряничный домик — это уникальная архитектурная сладость, которая украсить каждый дом. Такому подарку будут одинаково рады как дети, так и взрослые, ведь в Новогоднюю ночь абсолютно все верят в чудо. Благодаря нарядному декору сладкий домик погружает всё вокруг в невероятно праздничную атмосферу. Можно дополнить пряничный шедевр логотипом компании и вручить его партнёрам по бизнесу или клиентам в качестве корпоративного презента.
+                        h2(role="heading") Заголовок абзаца
+                        h3(role="heading") Подзаголовок
+
+            .about__block.text
+                p Наши кондитеры — настоящие волшебники. Из пряного теста и белоснежной глазури они создают рождественскую сказку. Угощение имеет не только удивительный дизайн, но и приятный аромат. Нотки имбиря, меда и цитруса располагают к уютным семейным чаепитиям.
+                p Мы можем выполнить пряничный домик на новый год в любом оформлении. Необыкновенные узоры из сахарной глазури, украшения в виде ёлочных игрушек, еловых венков и поздравительные надписи — каждое творение неповторимо. Кондитерская Шодо использует только качественные и натуральные продукты.
+
+            .about__block.article__gallery-rows
+                .article__gallery-cols._c3
+                    +picture('about__picture', 'jpeg',
+                        'img/tmp/webp/article-page@2x.webp', 'img/tmp/webp/article-page.webp',
+                        'img/tmp/article-page@2x.jpg', 'img/tmp/article-page.jpg', 350, 350)
+                    +picture('about__picture', 'jpeg',
+                        'img/tmp/webp/article-page@2x.webp', 'img/tmp/webp/article-page.webp',
+                        'img/tmp/article-page@2x.jpg', 'img/tmp/article-page.jpg', 350, 350)
+                    +picture('about__picture', 'jpeg',
+                        'img/tmp/webp/article-page@2x.webp', 'img/tmp/webp/article-page.webp',
+                        'img/tmp/article-page@2x.jpg', 'img/tmp/article-page.jpg', 350, 350)
+                .article__gallery-cols._c2
+                    +picture('about__picture', 'jpeg',
+                        'img/tmp/webp/article-page@2x.webp', 'img/tmp/webp/article-page.webp',
+                        'img/tmp/article-page@2x.jpg', 'img/tmp/article-page.jpg', 540, 501)
+                    +picture('about__picture', 'jpeg',
+                        'img/tmp/webp/article-page@2x.webp', 'img/tmp/webp/article-page.webp',
+                        'img/tmp/article-page@2x.jpg', 'img/tmp/article-page.jpg', 540, 501)
+
+            .about__block.text
+                h3(role="heading") Нумерованный список
+                ol(role="list")
+                    li(role="listitem") 8 куриных яиц
+                    li(role="listitem") 1 стакан (300 г) сахара
+                    li(role="listitem") 1 стакан муки
+                    li(role="listitem") 100 г сливочного масла
+
+                h3(role="heading") Маркированный список
+                ul(role="list")
+                    li(role="listitem") 8 куриных яиц
+                    li(role="listitem") 1 стакан (300 г) сахара
+                    li(role="listitem") 1 стакан муки
+                    li(role="listitem") 100 г сливочного масла
+
+    include includes/_other-articles
+
+    include includes/_related

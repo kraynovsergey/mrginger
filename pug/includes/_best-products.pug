@@ -1,0 +1,84 @@
+section.section(data-tab-parent)
+    .container
+        h2.section__title.h1._center(role="heading") Лучшие торты
+
+        .popular-category__tabs.no-scroll
+            .popular-category__tabs-navigation
+                button.navigation__btn.best-products__navigation._prev._active(type="button" role="button" data-tab-content="tab-1")
+                    svg(width="27" height="20")
+                        use(xlink:href="img/sprite.svg#arrow")
+                button.navigation__btn.best-products__navigation._prev(type="button" role="button" data-tab-content="tab-2")
+                    svg(width="27" height="20")
+                        use(xlink:href="img/sprite.svg#arrow")
+                button.navigation__btn.best-products__navigation._prev(type="button" role="button" data-tab-content="tab-3")
+                    svg(width="27" height="20")
+                        use(xlink:href="img/sprite.svg#arrow")
+
+            button.popular-category__tab._active(type="button" data-tab="tab-1" role="button") Самые популярные
+            button.popular-category__tab(type="button" data-tab="tab-2" role="button") Новые
+            button.popular-category__tab._last(type="button" data-tab="tab-3" role="button") Рекомендуем
+
+            .popular-category__tabs-navigation
+                button.navigation__btn.best-products__navigation._next._active(type="button" role="button" data-tab-content="tab-1")
+                   svg(width="27" height="20")
+                        use(xlink:href="img/sprite.svg#arrow")
+                button.navigation__btn.best-products__navigation._next(type="button" role="button" data-tab-content="tab-2")
+                    svg(width="27" height="20")
+                        use(xlink:href="img/sprite.svg#arrow")
+                button.navigation__btn.best-products__navigation._next(type="button" role="button" data-tab-content="tab-3")
+                    svg(width="27" height="20")
+                        use(xlink:href="img/sprite.svg#arrow")
+
+        .popular-category__content._active(data-tab-content="tab-1")
+            .best-products__carousel.swiper(data-item="tab-1")
+                .swiper-wrapper
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+
+        .popular-category__content(data-tab-content="tab-2")
+            .best-products__carousel.swiper(data-item="tab-2")
+                .swiper-wrapper
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+
+        .popular-category__content(data-tab-content="tab-3")
+            .best-products__carousel.swiper(data-item="tab-3")
+                .swiper-wrapper
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+                    .best-products__slide.swiper-slide
+                        +product('product-carousel', 'Торт без мастики №1', 'Торт без мастики с украшением различными конфетками', '4 580')
+
+
+
+
+
+

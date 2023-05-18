@@ -1,0 +1,61 @@
+.contacts {
+	&__requisites {
+		width: 100%;
+		max-width: 750px;
+		border: 7px solid $color_input_border;
+		background: $color_background_card;
+		border-radius: 15px;
+		padding: 45px;
+		margin: 0 auto;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+
+		@media (max-width: 991px) {
+			max-width: 100%;
+		}
+
+		@media (max-width: 700px) {
+			padding: 30px 20px;
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		& li {
+			font-size: 1.14rem;
+
+			& span {
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__download {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+
+		@media (max-width: 700px) {
+			position: relative;
+			top: unset;
+			right: unset;
+			min-width: 30px;
+			max-width: 30px;
+			margin: 30px auto 0;
+		}
+
+		&:hover {
+			& svg {
+				fill: $color_secondary;
+			}
+		}
+
+		& svg {
+			fill: $color_primary;
+		}
+	}
+}

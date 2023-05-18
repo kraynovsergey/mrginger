@@ -1,0 +1,54 @@
+extends base
+
+block seo
+    - var seo = {title: 'Контакты', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    section.section
+        .container
+            h1._center Контакты
+            .delivery__grid
+                .delivery__map
+                    script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f195811af57572d5435464174c4fb54ed620651769fd250725319fc20743755&amp;width=100%25&amp;height=389&amp;lang=ru_RU&amp;scroll=false")
+                .delivery__contacts
+                    address.delivery__contact
+                        .delivery__contact-icon
+                            svg(width="30" height="30")
+                                use(xlink:href="img/sprite.svg#contacts-1")
+                        .delivery__contact-content Москва, Азовская 24 к.3, ТРЦ Азовский, 3 этаж, м.Севастопольская
+
+                    address.delivery__contact
+                        .delivery__contact-icon
+                            svg(width="30" height="30")
+                                use(xlink:href="img/sprite.svg#contacts-2")
+                        .delivery__contact-content
+                            a.delivery__contact-link(href="tel:+74951810801" role="link") +7 (495) 181-08-01
+                            a.delivery__contact-link(href="mailto:zakaz@mrginger.ru" role="link") zakaz@mrginger.ru
+
+                    address.delivery__contact
+                        .delivery__contact-icon
+                            svg(width="30" height="30")
+                                use(xlink:href="img/sprite.svg#contacts-3")
+                        .delivery__contact-content Пн-Вс: 10:00 - 21:00
+
+    section.section
+        .container
+            h2.h1._center Контакты Mr.Ginger
+
+            .contacts__requisites
+                ul.contacts__list(role="list")
+                    li(role="listitem") <span>Краткое наименование организации:</span> ООО «Зета Корп.»
+                    li(role="listitem") <span>Полное наименование организации:</span> Общество с ограниченной ответственностью «Корпорация Зета»
+                    li(role="listitem") <span>Юридический адрес:</span> 117437, г. Москва, ул. Островитянова, д. 25, корп. 1, кв. 90
+                    li(role="listitem") <span>ИНН:</span> 7728867313
+                    li(role="listitem") <span>КПП:</span> 772801001
+                    li(role="listitem") <span>ОГРН:</span> 1147746021499 Выдано Межрайонной инспекцией Федеральной налоговой службы №46 по г.Москве 20 января 2014 года
+                    li(role="listitem") <span>Банк:</span> АО "АЛЬФА-БАНК"
+                    li(role="listitem") <span>БИК:</span> 044525593
+                    li(role="listitem") <span>Корр. счет:</span> 30101810200000000593 в ГУ БАНКА РОССИИ ПО ЦФО
+                    li(role="listitem") <span>Расчетный счет:</span> 40702810802230001153
+                a.contacts__download(href="#" target="_blank" aria-label="Скачать реквизиты")
+                    svg(width="30" height="30")
+                        use(xlink:href="img/sprite.svg#download")

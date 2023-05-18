@@ -1,0 +1,19 @@
+extends base
+
+block seo
+    - var seo = {title: 'Статьи', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    section.section
+        .container
+            h1._center Статьи
+
+            .articles__grid
+                +article('Новогодние пирожные')
+                +article('Пряничные домики – оригинальный подарок на Новый год и Рождество')
+                +article('Как правильно рассчитать вес и размер свадебного торта?')
+                +article('Новогодние пирожные')
+                +article('Пряничные домики – оригинальный подарок на Новый год и Рождество')
+                +article('Как правильно рассчитать вес и размер свадебного торта?')

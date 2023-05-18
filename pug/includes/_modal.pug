@@ -1,0 +1,32 @@
+.modal(id="add-to-cart")
+    .modal__thankyou
+        .modal__icon
+            svg(width="66" height="66")
+                use(xlink:href="img/sprite.svg#thankyou")
+        .modal__title.h1 Товар добавлен!
+        .modal__text Товар успешно добавлен в корзину
+        .modal__btns
+            button.modal__btn._bordered(type="button" role="button" data-fancybox-close) Продолжить покупки
+            a.modal__btn._blue(href="cart.html" role="link") Перейти в корзину
+                svg(width="21" height="20")
+                    use(xlink:href="img/sprite.svg#cart")
+
+.modal(id="modal-order-success")
+    .modal__thankyou
+        .modal__title.h1 Спасибо! <br>Ваш заказ №1454 принят.
+        .modal__text Номер заказа отправлен на почту. <br>В ближайшее время наш менеджер свяжется с Вами.
+        .modal__btns._center
+            a.modal__btn._blue(href="catalog.html") Вернуться к покупкам
+
+.modal(id="modal-reviews-success")
+    .modal__thankyou
+        .modal__title.h1 Ваш отзыв принят!
+        .modal__text Спасибо за Ваш отзыв.
+        .modal__btns._center
+            button.modal__btn._blue(type="button" role="button" data-fancybox-close) Вернуться к покупкам
+
+.modal(id="modal-callback-success")
+    .modal__thankyou
+        .modal__title.h1 Спасибо! Мы с Вами свяжемся.
+        .modal__btns._center
+            button.modal__btn._blue(type="button" role="button" data-fancybox-close) Вернуться назад

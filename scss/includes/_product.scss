@@ -1,0 +1,295 @@
+.product {
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+	overflow: hidden;
+	transition: $transition;
+	position: relative;
+	padding: 14px;
+	background: $color_background_card;
+	height: 100%;
+	justify-content: space-between;
+
+	@media (max-width: 700px) {
+		padding: 20px;
+	}
+
+	&:hover {
+		@media (min-width: 701px) {
+			box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+		}
+
+		& .product__fast-view {
+			display: block;
+		}
+
+		& .product__tags {
+			& .product__action {
+				transform: translateY(0) !important;
+			}
+		}
+	}
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__img {
+		position: relative;
+		margin: -14px -14px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (max-width: 700px) {
+			margin: -20px -20px 0;
+		}
+	}
+
+	&__picture {
+		display: block;
+		width: 100%;
+
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__title {
+		margin: 15px 0;
+		text-align: center;
+		color: $color_primary;
+		text-decoration: none;
+		font-size: 1.28rem;
+		font-weight: 600;
+
+		@media (max-width: 991px) {
+			font-size: 1.14rem;
+		}
+
+		@media (max-width: 700px) {
+			font-size: 1.33rem;
+		}
+
+		&:hover {
+			color: inherit;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+	&__text {
+		font-size: 1.14rem;
+		text-align: center;
+
+		@media (max-width: 991px) {
+			font-size: 1rem;
+		}
+
+		@media (max-width: 700px) {
+			font-size: 1.16rem;
+		}
+	}
+
+	&__controls {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 13px;
+
+		@media (max-width: 991px) {
+			flex-direction: column;
+		}
+
+		@media (max-width: 700px) {
+			flex-direction: row;
+		}
+	}
+
+	&__price {
+		font-size: 1.42rem;
+		font-weight: 700;
+		color: $color_secondary;
+
+		@media (max-width: 1100px) {
+			font-size: 1.2rem;
+		}
+
+		@media (max-width: 991px) {
+			font-size: 1.42rem;
+			margin-bottom: 10px;
+		}
+
+		@media (max-width: 700px) {
+			font-size: 1.66rem;
+			margin-bottom: 0;
+		}
+	}
+
+	&__to-cart {
+		height: 35px;
+		border-radius: 20px;
+		border: 2px solid $color_secondary;
+		color: $color_secondary;
+		padding: 0 10px;
+		font-size: 1.14rem;
+		position: relative;
+
+		&:hover {
+			color: $color_background_card;
+			background: $color_secondary;
+		}
+
+		@media (max-width: 700px) {
+			font-size: 1.33rem;
+			padding: 0 15px;
+		}
+	}
+
+	&__fast-view {
+		position: absolute;
+		bottom: 25px;
+		height: 35px;
+		padding: 0 20px;
+		background: rgba(249, 249, 252, .8);
+		border-radius: 15px;
+		z-index: 2;
+		display: none;
+
+		@media (max-width: 991px) {
+			bottom: 17px;
+		}
+
+		@media (max-width: 700px) {
+			bottom: 30px;
+			font-size: 1.14rem;
+		}
+
+		&:hover {
+			background: $color_secondary;
+			color: $color_background_card;
+		}
+	}
+
+	&__actions {
+		position: absolute;
+		top: 10px;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+
+		&._left {
+			left: 10px;
+		}
+
+		&._right {
+			right: 10px;
+		}
+	}
+
+	&__action {
+		min-width: 30px;
+		max-width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 8px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&._opacity {
+			background: rgba(255, 255, 255, 0.6);
+
+			& svg {
+				stroke: $color_secondary;
+			}
+
+			&:hover {
+				background: $color_secondary;
+
+				& svg {
+					stroke: $color_background_card;
+				}
+			}
+		}
+
+		&._new {
+			background: #4CA9DE;
+		}
+
+		&._sale {
+			background: #F52941;
+		}
+
+		&._eco {
+			background: #8FBE4F;
+		}
+
+		&._medal {
+			background: #FFAC00;
+		}
+
+		&._hit {
+			background: #9769BB;
+		}
+
+		&._fill {
+			& svg {
+				fill: $color_background_card;
+				stroke: transparent;
+			}
+		}
+
+		& svg {
+			stroke: $color_background_card;
+		}
+	}
+
+	&__tags {
+		display: flex;
+		flex-direction: column;
+
+		& .product__action {
+			position: relative;
+			transition: $transition;
+
+			&:first-child {
+				transform: translateY(0);
+				z-index: 5;
+			}
+
+			&:nth-child(2) {
+				transform: translateY(-100%);
+				z-index: 4;
+			}
+
+			&:nth-child(3) {
+				transform: translateY(-200%);
+				z-index: 3;
+			}
+
+			&:nth-child(4) {
+				transform: translateY(-300%);
+				z-index: 2;
+			}
+
+			&:nth-child(5) {
+				transform: translateY(-400%);
+				z-index: 1;
+			}
+		}
+	}
+}

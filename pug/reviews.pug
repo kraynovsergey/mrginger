@@ -1,0 +1,90 @@
+extends base
+
+block seo
+    - var seo = {title: 'Отзывы', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    section.section
+        .container
+            h1._center Отзывы
+
+            mixin reviews(title, text)
+                article.reviews__item(role="article")
+                    +picture('reviews__picture', 'jpeg',
+                        'img/tmp/webp/reviews@2x.webp', 'img/tmp/webp/reviews.webp',
+                        'img/tmp/reviews@2x.jpg', 'img/tmp/webp/reviews.jpg', 353, 362)
+                    h3.reviews__title(role="heading")= title
+                    time.reviews__date(datetime="2023-01-17") 17.01.2023
+                    .text
+                        p= text
+
+            .reviews._gradient(data-masonry)
+                .reviews__col
+                    +reviews('Ирина', 'Заказывала в марте торт маме на юбилей 60 лет. Выбрала тот, который на сайте. Привезли все во время, идеально упакован! Соответствует представленному на картинке. Торт был изумительный! Самый вкусный, который я пробовала (без преувеличения)! Дали две карты скидочные на следующий заказ. Обязательно будем заказывать здесь ещё! Спасибо Вам за такую вкусную красоту!!!')
+                .reviews__col
+                    +reviews('Ирина', 'Добрый день!Тортик очень понравился! Спасибо большое!')
+                .reviews__col
+                    +reviews('Наталья Кондрашкина', 'Добрый день! Хочу выразить огромную благодарность за отлично проделанную работу. Торт на крестины был просто великолепный. Исполнение, вкус, доставка - все на высшем уровне!')
+                .reviews__col
+                    +reviews('Ирина', 'Заказывала в марте торт маме на юбилей 60 лет. Выбрала тот, который на сайте. Привезли все во время, идеально упакован! Соответствует представленному на картинке. Торт был изумительный! Самый вкусный, который я пробовала (без преувеличения)! Дали две карты скидочные на следующий заказ. Обязательно будем заказывать здесь ещё! Спасибо Вам за такую вкусную красоту!!!')
+                .reviews__col
+                    +reviews('Ирина', 'Добрый день!Тортик очень понравился! Спасибо большое!')
+                .reviews__col
+                    +reviews('Наталья Кондрашкина', 'Добрый день! Хочу выразить огромную благодарность за отлично проделанную работу. Торт на крестины был просто великолепный. Исполнение, вкус, доставка - все на высшем уровне!')
+                .reviews__col
+                    +reviews('Ирина', 'Заказывала в марте торт маме на юбилей 60 лет. Выбрала тот, который на сайте. Привезли все во время, идеально упакован! Соответствует представленному на картинке. Торт был изумительный! Самый вкусный, который я пробовала (без преувеличения)! Дали две карты скидочные на следующий заказ. Обязательно будем заказывать здесь ещё! Спасибо Вам за такую вкусную красоту!!!')
+                .reviews__col
+                    +reviews('Ирина', 'Добрый день!Тортик очень понравился! Спасибо большое!')
+                .reviews__col
+                    +reviews('Наталья Кондрашкина', 'Добрый день! Хочу выразить огромную благодарность за отлично проделанную работу. Торт на крестины был просто великолепный. Исполнение, вкус, доставка - все на высшем уровне!')
+
+            button.reviews__btn.btn(type="button" role="button") Показать еще отзывы
+
+    section.section
+        .container
+            .reviews__form
+                h2.h1._center(role="heading") Оставить отзыв
+
+                form.form(action="#" method="post")
+                    fieldset.form__fieldset
+                        label.order__label(for="reviews-name") Ваше имя
+                        input.input(type="text" name="name" id="reviews-name")
+                    fieldset.form__fieldset
+                        label.order__label(for="reviews-email") Email:
+                        input.input(type="text" name="email" id="reviews-email")
+                    fieldset.form__fieldset
+                        label.order__label(for="reviews-message") Ваш отзыв:
+                        textarea.form__textarea(id="reviews-message")
+                    fieldset.form__fieldset
+                        label.order__label(for="reviews-message") Ваше изображение:
+                        .form__attachment
+                            input(type="file" name="attachment" id="reviews-attachment")
+                            label.btn._bordered._small(for="reviews-attachment") Прикрепить файл
+                            .form__attachment-img
+                                img(src="img/tmp/attachment.jpg" alt="" width="107" height="87")
+                                button.form__attachment-remove(type="button" role="button" aria-label="Удалить")
+                                    svg(width="9" height="10")
+                                        use(xlink:href="img/sprite.svg#remove")
+                            .form__attachment-note Изображение должно быть не больше чем 10000x10000 пикселей и 10240 кб
+                    button.form__btn.btn(type="submit" role="button" data-src="#modal-reviews-success" data-fancybox) Отправить
+
+    section.section
+        .container
+            h2.h1._center Рейтинги
+            ul.reviews__rating(role="list")
+                li(role="listitem")
+                    a(href="http://гдеотдыхают.дети" target="_blank" rel="nofollow" role="link") http://гдеотдыхают.дети
+                li(role="listitem")
+                    a(href="https://expert.ru" target="_blank" rel="nofollow" role="link") https://expert.ru
+                li(role="listitem")
+                    a(href="https://wsjournal.ru/" target="_blank" rel="nofollow" role="link") https://wsjournal.ru/
+                li(role="listitem")
+                    a(href="https://markakachestva.ru" target="_blank" rel="nofollow" role="link") https://markakachestva.ru
+                li(role="listitem")
+                    a(href="https://vyborok.com" target="_blank" rel="nofollow" role="link") https://vyborok.com
+                li(role="listitem")
+                    a(href="https://kudagid.ru" target="_blank" rel="nofollow" role="link") https://kudagid.ru
+
+

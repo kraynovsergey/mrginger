@@ -1,0 +1,162 @@
+extends base
+
+block seo
+    - var seo = {title: 'Оформление заказа', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    section.section
+        .container
+            h1 Оформление заказа
+
+            form.order
+                .order__block
+                    .order__cols-receiver
+                        fieldset.order__fieldset
+                            label.order__label ФИО*
+                            input.input(type="text" name="name")
+                        fieldset.order__fieldset
+                            label.order__label Телефон*
+                            input.input(type="tel" name="phone")
+                        fieldset.order__fieldset
+                            label.order__label Email*
+                            input.input(type="email" name="email")
+
+                    .order__note * Обязательное поле для заполнения
+
+                .order__block
+                    .order__title Получение заказа
+                    .order__radios
+                        .order__radio
+                            input(type="radio" name="delivery" value="1" id="delivery-1" data-delivery="item-1" checked)
+                            label(for="delivery-1")
+                                svg(width="78" height="72")
+                                    use(xlink:href="img/sprite.svg#pickup")
+                                | Самовывоз
+                        .order__radio
+                            input(type="radio" name="delivery" value="2" id="delivery-2" data-delivery="item-2")
+                            label(for="delivery-2")
+                                svg(width="78" height="72")
+                                    use(xlink:href="img/sprite.svg#delivery")
+                                | Доставка
+
+                .order__block
+                    .order__delivery-grid
+                        .order__address-rows
+                            .order__address-cols._c2
+                                fieldset.order__fieldset
+                                    label.order__label Дата получения заказа
+                                    input.input(type="text" name="date" data-datepicker readonly)
+
+
+                                fieldset.order__fieldset
+                                    label.order__label Время получения заказа
+                                    .select(data-select-parent)
+                                        button.select__current(type="button" data-select data-toggle) 9:00 - 15:00
+                                        .select__variants
+                                            .select__variant
+                                                input(type="radio" name="time" value="" id="time-1")
+                                                label(for="time-1") 9:00 - 15:00
+                                            .select__variant
+                                                input(type="radio" name="time" value="" id="time-2")
+                                                label(for="time-2") 12:00 - 18:00
+                                            .select__variant
+                                                input(type="radio" name="time" value="" id="time-3")
+                                                label(for="time-3") 15:00 - 21:00
+
+                            .order__address-cols._c1(data-delivery-fieldset="item-1")
+                                fieldset.order__fieldset
+                                    label.order__label Адрес для самовывоза
+                                    .select(data-select-parent)
+                                        button.select__current(type="button" data-select data-toggle) Москва, Азовская 24 к.3, ТРЦ Азовский, 3 этаж, м.Севастопольская
+                                        .select__variants
+                                            .select__variant
+                                                input(type="radio" name="pickup" value="" id="pickup-1")
+                                                label(for="pickup-1") Москва, Азовская 24 к.3, ТРЦ Азовский, 3 этаж, м.Севастопольская
+                                            .select__variant
+                                                input(type="radio" name="pickup" value="" id="pickup-2")
+                                                label(for="pickup-2") ул.Вавилова 3, ТРЦ Гагаринский, 3 этаж
+                                            .select__variant
+                                                input(type="radio" name="pickup" value="" id="pickup-3")
+                                                label(for="pickup-3") Хорошевский пр-д, 14, ТРК Vegas Кунцево, 3 этаж
+
+                            .order__address-cols.hidden._c1(data-delivery-fieldset="item-2")
+                                fieldset.order__fieldset
+                                    label.order__label Адрес доставки
+                                    input.input(type="text" name="address")
+
+                            .order__address-cols.hidden._address(data-delivery-fieldset="item-2")
+                                fieldset.order__fieldset
+                                    label.order__label Подъезд
+                                    input.input(type="text" name="address")
+
+                                fieldset.order__fieldset
+                                    label.order__label Этаж
+                                    input.input(type="text" name="address")
+
+                                fieldset.order__fieldset
+                                    label.order__label Кв./Офис
+                                    input.input(type="text" name="address")
+
+                                fieldset.order__fieldset
+                                    label.order__label Код домофона
+                                    input.input(type="text" name="address")
+
+                            .order__address-cols._c1
+                                fieldset.order__fieldset
+                                    label.order__label Комментарий
+                                    input.input(type="text" name="comment")
+
+                        .order__map
+                            script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f195811af57572d5435464174c4fb54ed620651769fd250725319fc20743755&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false")
+
+                .order__block
+                    .order__title Способы оплаты:
+                    .order__radios
+                        .order__radio
+                            input(type="radio" name="payment" value="1" id="payment-1" checked)
+                            label(for="payment-1")
+                                svg(width="177" height="93")
+                                    use(xlink:href="img/sprite.svg#payment-1")
+                                | Оплата картой
+                        .order__radio
+                            input(type="radio" name="payment" value="2" id="payment-2")
+                            label(for="payment-2")
+                                svg(width="177" height="93")
+                                    use(xlink:href="img/sprite.svg#payment-2")
+                                | Оплата наличными
+                        .order__radio
+                            input(type="radio" name="payment" value="3" id="payment-3")
+                            label(for="payment-3")
+                                svg(width="177" height="93")
+                                    use(xlink:href="img/sprite.svg#payment-3")
+                                | Оплата по расчетному счету
+                        .order__radio
+                            input(type="radio" name="payment" value="4" id="payment-4")
+                            label(for="payment-4")
+                                svg(width="177" height="93")
+                                    use(xlink:href="img/sprite.svg#payment-4")
+                                | Оплата через Юкассу
+
+                .order__block
+                    .order__title У Вас есть Купон?
+                    .order__coupon
+                        input.input.order__coupon-input(type="text" name="coupon")
+                        button.order__coupon-btn(type="button" role="button") Применить купон
+
+                .order__itogo
+                    .order__itogo-row
+                        span Стоимость заказа
+                        span 10 170 ₽
+                    .order__itogo-row
+                        span Скидка за самовывоз
+                        span 1017 ₽
+                    .order__itogo-row._strong
+                        span Итоговая стоимость
+                        span 10 170 ₽
+                    button.order__submit(type="button" role="button" data-src="#modal-order-success" data-fancybox) Оформить заказ
+                    .order__policy
+                        input(type="checkbox" name="poliocy" id="order-policy" checked)
+                        label(for="order-policy") <span>С <a href="#">правилами</a> обработки персональных данных согласен</span>
+                            .order__policy-check

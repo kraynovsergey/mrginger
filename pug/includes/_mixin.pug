@@ -1,0 +1,103 @@
+mixin picture(classname, format, webp2x, webp, jpg2x, jpg, width, height)
+    picture(class= classname)
+        source(type="image/webp" data-srcset=""+webp2x+" 2x, "+webp+" 1x" srcset="")
+        source(type="image/"+format+"" data-srcset=""+jpg2x+" 2x, "+jpg+" 1x" srcset="")
+        img.lazy(data-src= jpg src="" alt="" width= width height= height)
+
+mixin navigation(classname, side, data)
+    button.navigation__btn(class= classname class= side type="button" role="button")
+        svg(width="27" height="20")
+            use(xlink:href="img/sprite.svg#arrow")
+
+mixin pagination(classname)
+    .pagination(class= classname)
+
+
+mixin category(title, img, width, height, classname)
+    .category__item(class= classname)
+        +picture('category__picture', 'jpeg', 'img/tmp/webp/'+img+'@2x.webp' , 'img/tmp/webp/'+img+'.webp', 'img/tmp/'+img+'@2x.jpg', 'img/tmp/'+img+'.jpg', width, height)
+        a.category__title(href="catalog.html" role="link")= title
+
+mixin product(img, title, text, price)
+    article.product(role="article")
+        .product__col
+            .product__img
+                +picture('product__picture', 'jpeg', 'img/tmp/webp/'+img+'@2x.webp' , 'img/tmp/webp/'+img+'.webp', 'img/tmp/'+img+'@2x.jpg', 'img/tmp/'+img+'.jpg', '255', '307')
+                button.product__fast-view(type="button" role="button") Быстрый просмотр
+                .product__actions._left
+                    button.product__action._opacity(type="button" role="button" aria-label="Сравнить")
+                        svg(width="16" height="16")
+                            use(xlink:href="img/sprite.svg#compare")
+
+                    .product__tags
+                        .product__action._new._fill(type="button" role="button")
+                            svg(width="21" height="8")
+                                use(xlink:href="img/sprite.svg#new")
+                        .product__action._sale._fill(type="button" role="button")
+                            svg(width="16" height="14")
+                                use(xlink:href="img/sprite.svg#sale")
+                        .product__action._eco._fill(type="button" role="button")
+                            svg(width="18" height="19")
+                                use(xlink:href="img/sprite.svg#eco")
+                        .product__action._medal._fill(type="button" role="button")
+                            svg(width="18" height="19")
+                                use(xlink:href="img/sprite.svg#medal")
+                        .product__action._hit._fill(type="button" role="button")
+                            svg(width="16" height="16")
+                                use(xlink:href="img/sprite.svg#hit")
+
+                .product__actions._right
+                    button.product__action._opacity(type="button" role="button" aria-label="Добавить в избранное")
+                        svg(width="16" height="16")
+                            use(xlink:href="img/sprite.svg#favourite")
+
+            a.product__title(href="product.html" role="link")= title
+            .product__text= text
+        form.product__controls(role="form")
+            .product__price= price + ' ₽/кг'
+            button.product__to-cart(type="button" role="button") Заказать
+
+mixin product_related(img, title, text, price)
+    article.product(role="article")
+        .product__col
+            .product__img
+                +picture('product__picture', 'jpeg', 'img/tmp/webp/'+img+'@2x.webp' , 'img/tmp/webp/'+img+'.webp', 'img/tmp/'+img+'@2x.jpg', 'img/tmp/'+img+'.jpg', '255', '307')
+            a.product__title(href="product.html" role="link")= title
+            .product__text= text
+        form.product__controls(role="form")
+            .product__price= price + ' ₽'
+            button.product__to-cart(type="button" role="button") Заказать
+
+mixin filling_select(classname)
+    .product-page__filling.select(class= classname data-select-parent)
+        button.select__current(data-select data-toggle)
+            .product-page__filling-item
+                +picture('', 'jpeg', 'img/tmp/webp/filling@2x.webp', 'img/tmp/webp/filling.webp', 'img/tmp/filling@2x.jpg', 'img/tmp/filling.jpg', 27, 27)
+                | Йогуртовая с вишней
+        .select__variants
+            .select__variant
+                input(type="radio" name="nach" value="" id="nach-1" checked)
+                label(for="nach-1")
+                    .product-page__filling-item
+                        +picture('', 'jpeg', 'img/tmp/webp/filling@2x.webp', 'img/tmp/webp/filling.webp', 'img/tmp/filling@2x.jpg', 'img/tmp/filling.jpg', 27, 27)
+                        | Йогуртовая с вишней
+            .select__variant
+                input(type="radio" name="nach" value="" id="nach-2")
+                label(for="nach-2")
+                    .product-page__filling-item
+                        +picture('', 'jpeg', 'img/tmp/webp/filling@2x.webp', 'img/tmp/webp/filling.webp', 'img/tmp/filling@2x.jpg', 'img/tmp/filling.jpg', 27, 27)
+                        | Молочная
+
+mixin count(classname)
+    .product-page__count(class= classname data-count-parent data-count-interval=".5" data-count-min=".5")
+        button.product-page__count-btn(type="button" role="button" data-count data-count-minus) -
+        input.product-page__count-input(type="text" name="count" value="2.5" readonly data-count-input)
+        button.product-page__count-btn(type="button" role="button" data-count data-count-plus) +
+
+mixin article(title, classname)
+    article.articles__item(class= classname)
+        +picture('articles__picture', 'jpeg',
+            'img/tmp/webp/article@2x.webp', 'img/tmp/webp/article.webp',
+            'img/tmp/article@2x.jpg', 'img/tmp/article.jpg')
+        h3.articles__title(role="heading")
+            a.articles__link(href="article.html")= title

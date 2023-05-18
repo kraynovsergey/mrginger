@@ -1,0 +1,184 @@
+extends base
+
+block seo
+    - var seo = {title: 'Цены', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    section.section
+        .container
+            h1._center Цены
+            .price__block.text
+                h2(role="heading") Уважаемые покупатели!
+                h3(role="heading") Условия заказа и скидки
+                p Наша кондитерская фабрика принимает заказы за за 2-3 дня до предполагаемой даты доставки.<br>Обращаем Ваше внимание, что изменения в заказ можно внести не позднее, чем за 3 дня до назначенной даты доставки.<br>При отмене заказа за 3 дня до даты доставки - предоплата не возвращается.<br>Заказы принимаются на условиях предоплаты в размере 100% от стоимости заказа.<br>За срочные заказы день в день или за один день до предполагаемой даты доставки берётся наценка 25% от общей стоимости заказа.
+
+            .price__block
+                h2.price__title(role="heading") Типы начинок
+                .price__box
+                    .price__row
+                        .price__row-item.price__big Базовая начинка
+                        .price__row-item йогуртовая с вишней, карамель, ягодная
+                        .price__row-item.price__big 790р /кг
+                    .price__row
+                        .price__row-item.price__big Классическая начинка
+                        .price__row-item Красный бархат, прага, черный лес,тирамису клубничное/классическое, панчо, наполеон, морковный, медовик
+                        .price__row-item.price__big 980р /кг
+                    .price__row
+                        .price__row-item.price__big Фирменная начинка
+                        .price__row-item чернично-ваниль, космос, сникерс, радужная, три шоколада, чизкейк, лаванда, молочная девочка
+                        .price__row-item.price__big 1280р /кг
+                    .price__row
+                        .price__row-item.price__big Люкс начинка
+                        .price__row-item тропическая( безлактозная, без глютена), Рио, фисташка -малина
+                        .price__row-item.price__big 2380р /кг
+                    .price__note начинки : ПОЛЕТ - ЧИЗКЕЙК - НАПОЛЕОН не подходят под тематическое оформление. Данные начинки можно заказать только в Базовом оформлении
+
+            .price__block
+                h2.price__title(role="heading") Виды покрытия тортов
+                .price__box
+                    .price__row
+                        .price__row-item.price__big Мастика
+                        .price__row-item торт выравнивают слоем масленного крема и покрывают слоем мастики без дополнительных элементов декора, примеры: №1, 4, 12 (каталог LL)
+                        .price__row-item.price__big 300р /кг
+                    .price__row
+                        .price__row-item.price__big Кремчиз
+                        .price__row-item торт выравнивается слоем масленного крема и затем обмазывается кремчизом, примеры: №5, 25, 34 (каталог LL)
+                        .price__row-item.price__big 400р /кг
+                    .price__row
+                        .price__row-item.price__big Глазировка зеркальной глазурью
+                        .price__row-item при выборе бисквитной начинки торт сначала выравнивается масленным кремом, затем глазируется. При выборе муссовой начинки торт сразу глазируется зеркальной глазурью<br>Примеры: Б3- база космос, Б8-база 3шоколада(каталог LL)
+                        .price__row-item.price__big 400р /кг
+                    .price__row
+                        .price__row-item.price__big Покрытие шоколадным велюром
+                        .price__row-item при выборе бисквитной начинки торт сначала выравнивается масленным кремом, затем покрывается велюром. При выборе муссовой начинки торт сразу покрывается велюром<br>Примеры: №289, 298 (каталог LL)
+                        .price__row-item.price__big 600р /кг
+
+            .price__block
+                h2.price__title(role="heading") Вид - дизайн торта
+                .price__box
+                    .price__type
+                        .price__type-item.price__big ЗD торт - не сложный
+                        .price__type-item суммируется с покрытием мастики(500р/кг или 300/кг)
+                    .price__type
+                        .price__type-item.price__big ЗD торт - на каркасе
+                        .price__type-item Только БИСКВИТНАЯ начинка, кроме радужного.
+                    .price__type
+                        .price__type-item.price__big Фотопечать
+                        .price__type-item на сахарной бумаге, фото на весь торт
+                    .price__type
+                        .price__type-item.price__big Торт- цифра
+                        .price__type-item пряное медовое печенье, прослоенное сливочно-сырным кремом с добавлением ягодного джема.
+
+            .price__block
+                h2.price__title(role="heading") Оформление торта
+                .price__box
+                    .price__grid._c2
+                        .price__grid-col
+                            .price__grid-row
+                                .price__big Свежие ягоды
+                                .price__big 300р /кг
+                            .price__grid-row
+                                .price__big Барашки / мазки кремчиза по торту
+                                .price__big 400р /кг
+                            .price__grid-row
+                                .price__big Шоколадные подтеки
+                                .price__big 400р /кг
+                            .price__grid-row
+                                .price__big Роспись по торту
+                                .price__big 600р /кг
+                            .price__grid-row
+                                .price__big Бисквитный мох
+                                .price__big 600р /кг
+
+                        .price__grid-col
+                            .price__grid-row
+                                .price__big Цифра
+                                .price__big 600р /кг
+                            .price__grid-row
+                                .price__big Сладости
+                                .price__big 600р /кг
+                            .price__grid-row
+                                .price__big Макарони
+                                .price__big 600р /кг
+                            .price__grid-row
+                                .price__big Шоколадный декор
+                                .price__big 600р /кг
+                            .price__grid-row
+                                .price__big Апликация на торте
+                                .price__big 600р /кг
+
+            .price__block
+                h2.price__title(role="heading") Элементы декора на торте
+                .price__box
+                    .price__grid._c3
+                        .price__grid-col
+                            .price__grid-title Мастичные фигурки
+                            .price__grid-row
+                                .price__big Небольшые простые фигурки
+                                .price__big 150р /шт
+                            .price__grid-row
+                                .price__big Простые фигурки
+                                .price__big 150р /шт
+                            .price__grid-row
+                                .price__big Средней сложности
+                                .price__big 150р /шт
+                            .price__grid-row
+                                .price__big Сложные
+                                .price__big 150р /шт
+                            .price__grid-row
+                                .price__big Точное портретное сходство
+                                .price__big 2000-3000р /шт
+
+                        .price__grid-col
+                            .price__grid-title Пряники на торт
+                            .price__grid-row
+                                .price__big Небольшой простой расписной
+                                .price__big 150р /шт
+                            .price__grid-row
+                                .price__big Простые расписные
+                                .price__big 150р /шт
+                            .price__grid-row
+                                .price__big Сложные расписные
+                                .price__big 150р /шт
+                            .price__grid-row
+                                .price__big Пряник с фотопечатью
+                                .price__big 150р /шт
+
+                        .price__grid-col
+                            .price__grid-title Леденцы, топперы на торт
+                            .price__grid-row
+                                .price__big Леденцы
+                                .price__big 150р /шт
+                            .price__grid-row
+                                .price__big Топперы
+                                .price__big 100-350р /шт
+                            .price__grid-row
+                                .price__big Большой топпер
+                                .price__big 150р /шт
+                            .price__grid-row
+                                .price__big Безе
+                                .price__big 150р /шт
+
+            .price__block
+                h2.price__title(role="heading") Свадебные торты
+                .price__box
+                    .price__grid-row
+                        .price__big Сахарные / вафельные цветы
+                        .price__big 150р /шт
+                    .price__grid-row
+                        .price__big Сахарное кружево
+                        .price__big 150р /шт
+                    .price__grid-row
+                        .price__big Живые цветы
+                        .price__big 150р /шт
+                    .price__grid-row
+                        .price__big Золотое/ Серебрянное покрытие
+                        .price__big 150р /шт
+                    .price__grid-row
+                        .price__big Пищевое золото/ серебро
+                        .price__big 2000-3000р /шт
+                    .price__grid-row
+                        .price__big Фальш - ярус
+                        .price__big 2000-3000р /шт

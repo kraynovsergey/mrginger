@@ -1,0 +1,145 @@
+.filter {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin: 0 -20px 20px;
+	position: relative;
+	z-index: 5;
+
+	@media (max-width: 700px) {
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: 10px;
+	}
+
+	&__col {
+		padding: 0 20px;
+		display: flex;
+
+		@media (max-width: 700px) {
+			padding: 0 15px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		border: 2px solid transparent;
+		padding: 0 10px;
+		border-radius: 9px;
+		position: relative;
+		margin-bottom: 20px;
+
+		&._choose {
+			background: $color_light_grey;
+			border-color: $color_grey;
+		}
+
+		&._show {
+			background: $color_background_card;
+			border-color: $color_input_border;
+			border-bottom-color: transparent;
+			border-radius: 9px 9px 0 0;
+			z-index: 2;
+
+			& .filter__variants {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+
+	&__title {
+		height: 36px;
+		font-size: 1.14rem;
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		&:after {
+			content: '';
+			width: 10px;
+			height: 10px;
+			border-left: 1px solid $color_primary;
+			border-bottom: 1px solid $color_primary;
+			transform: rotate(-45deg);
+			margin-left: 10px;
+			position: relative;
+			top: -2px;
+		}
+
+		& span {
+			margin-left: 5px;
+			font-weight: 500;
+		}
+	}
+
+	&__variants {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: -2px;
+		min-width: calc(100% + 4px);
+		background: $color_background_card;
+		border: 2px solid $color_input_border;
+		border-top: 0;
+		border-radius: 0 0 9px 9px;
+		padding: 0 10px 10px;
+	}
+
+	&__variant {
+		display: flex;
+		margin-bottom: 8px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&-input {
+			display: none;
+
+			&:checked {
+				& + .filter__variant-label {
+					& .filter__variant-check {
+						&:after {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+
+		&-label {
+			display: flex;
+			align-items: center;
+			white-space: nowrap;
+			font-size: .85rem;
+			cursor: pointer;
+		}
+
+		&-check {
+			min-width: 9px;
+			max-width: 9px;
+			height: 9px;
+			background: $color_light_grey;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 2px;
+			position: relative;
+			margin-right: 5px;
+
+			&:after {
+				content: '';
+				width: 5px;
+				height: 3px;
+				border-left: 1px solid $color_primary;
+				border-bottom: 1px solid $color_primary;
+				transform: rotate(-45deg);
+				position: absolute;
+				top: 2px;
+				opacity: 0;
+			}
+		}
+	}
+}

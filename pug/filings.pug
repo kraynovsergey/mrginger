@@ -1,0 +1,35 @@
+extends base
+
+block seo
+    - var seo = {title: 'Начинки', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    mixin filing(title, text, ingredients, filter)
+        article.filing__item._active(role="article" data-filter-item= filter)
+            +picture('filing__picture', 'jpeg',
+                'img/tmp/webp/filing-1@2x.webp', 'img/tmp/webp/filing-1.webp',
+                'img/tmp/filing-1@2x.jpg', 'img/tmp/filing-1.jpg')
+            h3.h3.filing__title(role="heading")= title
+            .filing__text= text
+            .filing__ingredients= ingredients
+
+    section.section(data-filter-parent)
+        .container
+            h1._center Начинки
+
+            .filing__filter
+                button.filing__filter-item._active(type="button" role="button" data-filter="all") Все начинки
+                button.filing__filter-item(type="button" role="button" data-filter="light") Легкие
+                button.filing__filter-item(type="button" role="button" data-filter="popular") Популярные
+
+            .filing__items
+                +filing('Йогурт с вишней', 'Ванильный бисквит, прослоенный йогуртовым кремом с кусочками вишни', 'Яйца, сахар, мука, масло растительное, разрыхлитель, сливки, йогурт, вишня, желатин', 'light popular')
+                +filing('Карамельный', 'Ванильный бисквит, прослоенный карамельным кремом', 'Яйца, сахар, мука, масло растительное, разрыхлитель, сливки, сгущенное варёное молоко, желатин', 'light')
+                +filing('Ягодный', 'Ванильный бисквит, прослоенный сметанно-сливочным кремом с добавлением ягод малины и черники', 'Яйца, сахар, мука, масло растительное, разрыхлитель, сливки, сметана, малина, черника, желатин', 'popular')
+                +filing('Йогурт с вишней', 'Ванильный бисквит, прослоенный йогуртовым кремом с кусочками вишни', 'Яйца, сахар, мука, масло растительное, разрыхлитель, сливки, йогурт, вишня, желатин', 'light popular')
+                +filing('Карамельный', 'Ванильный бисквит, прослоенный карамельным кремом', 'Яйца, сахар, мука, масло растительное, разрыхлитель, сливки, сгущенное варёное молоко, желатин', 'light')
+                +filing('Ягодный', 'Ванильный бисквит, прослоенный сметанно-сливочным кремом с добавлением ягод малины и черники', 'Яйца, сахар, мука, масло растительное, разрыхлитель, сливки, сметана, малина, черника, желатин', 'popular')
+
+

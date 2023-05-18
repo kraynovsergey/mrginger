@@ -1,0 +1,18 @@
+mixin pluses(icon, title, text)
+    article.pluses__item(role="article")
+        svg.pluses__icon(width="95" height="80")
+            use(xlink:href="img/sprite.svg#"+icon+"")
+        h3.pluses__title.h2(role="heading")= title
+        p.pluses__text= text
+
+section.section.pluses
+    .container
+        h2.h1._center Преимущества
+
+        .pluses__cols
+            .pluses__col
+                +pluses('pluses-1', 'Талантливые кондитеры', 'В нашем штате есть скульпторы, оформители, пекари, шоколатье - именно поэтому мы можем исполнить любую вашу задумку!')
+            .pluses__col
+                +pluses('pluses-2', 'Всегда свежие ингредиенты', 'Наши торты будут радовать вас не только оформлением, но и вкусом начинок! Помимо представленных в каталоге, вы можете заказать торт по своему эскизу.')
+            .pluses__col
+                +pluses('pluses-3', 'Быстрая доставка', 'Мы быстро обрабатываем заказы и стараемся выполнять их максимально быстро. Забрать заказ можно самостоятельно или мы доставим его курьером.')

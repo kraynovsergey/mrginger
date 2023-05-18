@@ -1,0 +1,156 @@
+.select {
+	position: relative;
+	width: 100%;
+
+	&__current {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 8px 15px;
+		background: $color_background_card;
+		border: 2px solid $color_input_border;
+		border-radius: 9px;
+		overflow: hidden;
+		width: 100%;
+		cursor: pointer;
+		text-align: left;
+
+		&::after {
+			content: '';
+			min-width: 12px;
+			max-width: 12px;
+			height: 12px;
+			border-left: 1px solid $color_primary;
+			border-bottom: 1px solid $color_primary;
+			transform: rotate(-45deg);
+			top: -2px;
+			position: relative;
+			margin-left: 10px;
+		}
+
+		&._active {
+			& + .select__variants {
+				display: flex;
+			}
+		}
+	}
+
+	&__variants {
+		position: absolute;
+		top: calc(100% - 7px);
+		width: 100%;
+		background: $color_background_card;
+		border: 2px solid $color_input_border;
+		border-top: 0;
+		border-radius: 0 0 9px 9px;
+		flex-direction: column;
+		overflow: hidden;
+		display: none;
+		z-index: 3;
+	}
+
+	&__variant {
+
+		& input {
+			display: none;
+
+			&:checked {
+				& + label {
+					background: rgba(119, 119, 163, 0.2);
+				}
+			}
+		}
+
+		& label {
+			padding: 5px 15px;
+			cursor: pointer;
+			width: 100%;
+
+			&:hover {
+				background: rgba(119, 119, 163, 0.2);
+			}
+		}
+	}
+}
+
+.input {
+	display: block;
+	width: 100%;
+	background: $color_background_card;
+	height: 41px;
+	border: 2px solid $color_input_border;
+	border-radius: 9px;
+	padding: 0 15px;
+	color: $color_primary;
+}
+.form {
+	&__fieldset {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 25px;
+	}
+
+	&__textarea {
+		display: block;
+		width: 100%;
+		background: $color_background_card;
+		height: 100px;
+		border: 2px solid $color_input_border;
+		border-radius: 9px;
+		padding: 10px 15px;
+		color: $color_primary;
+		resize: none;
+	}
+
+	&__attachment {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		& input {
+			display: none;
+		}
+		
+		& label {
+			cursor: pointer;
+		}
+
+		&-img {
+			margin-top: 12px;
+			position: relative;
+			max-width: 107px;
+			width: 100%;
+
+			& img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&-remove {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: rgba(255,255,255,.6);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+
+			& svg {
+				fill: none;
+				stroke: $color_secondary;
+			}
+		}
+
+		&-note {
+			margin-top: 10px;
+		}
+	}
+
+	&__btn {
+		margin: 0 auto;
+	}
+}

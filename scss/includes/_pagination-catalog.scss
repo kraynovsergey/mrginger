@@ -1,0 +1,66 @@
+.pagination-catalog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 40px 0 0;
+	padding: 0;
+	list-style: none;
+
+	@media (max-width: 991px) {
+		margin-top: 35px;
+	}
+
+	&__item {
+		margin-right: 25px;
+		color: $color_secondary;
+		font-size: 1.4rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__btn {
+		min-width: 26px;
+		max-width: 26px;
+		height: 26px;
+		background: $color_secondary;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		&:hover {
+			background: $color_primary;
+		}
+
+		&::after {
+			content: '';
+			width: 10px;
+			height: 10px;
+			border-left: 2px solid $color_background_card;
+			border-bottom: 2px solid $color_background_card;
+			transform: rotate(45deg);
+			position: absolute;
+			left: 10px;
+		}
+
+		&._next {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__link {
+		color: $color_secondary;
+		text-decoration: none;
+
+		&:hover {
+			color: $color_primary;
+		}
+
+		&._active {
+			font-weight: 600;
+		}
+	}
+}

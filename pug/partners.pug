@@ -1,0 +1,60 @@
+extends base
+
+block seo
+    - var seo = {title: 'Партнерская программа', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    section.section.text
+        .container
+            h1._center(role="heading") Партнерская программа
+            p Приглашаем компании к сотрудничеству<br>Мы приглашаем к сотрудничеству детские развлекательные зоны и комплексы, банкетные залы, рестораны, кофейни и т.д.
+            h3(role="heading") Условия сотрудничества
+            ul(role="list")
+                li(role="listitem") При заказе продукции в месяц в объеме до 50 000₽- скидка от стоимости заказа 5%.
+                li(role="listitem") При заказе продукции в месяц в объеме от 100 000₽- скидка от стоимости заказа 10%.
+                li(role="listitem") При заказе продукции в месяц в объеме от 300 000₽- скидка от стоимости заказа 15%.
+            h3(role="heading") Условия оплаты
+            ol(role="list")
+                li(role="listitem") Заказ должен быть оплачен полностью за 3 дня до даты доставки
+                li(role="listitem") Депозитные средства в объеме от 10 000₽ с открытой датой доставки, с возможностью выбора декора, количества, вкуса. Телефон для связи: +7 (495)181-08-01
+            h3(role="heading") Заявка на сотрудничество
+            p Почта отдела закупок <a href="mailto:zakaz@mrginger.ru">zakaz@mrginger.ru</a><br>Для корпоративных клиентов у нас предусмотрены гибкая система скидок.<br>Если у Вас есть свои идеи и предложения, мы всегда готовы их с вами обсудить!
+
+    section.section
+        .container
+            h2.h1.partners__heading._center(role="heading") Мы рады, что Вас заинтересовало сотрудничество с нашей компанией.
+            p._center Мы рассмотрим любое Ваше предложение и всегда открыты к диалогу.
+
+            form.form.partners__form(action="#" method="post" role="form")
+                fieldset.form__fieldset.partners__fieldset
+                    label.order__label(for="partners-name") Имя
+                    input.input(type="text" name="name" id="partners-name")
+                fieldset.form__fieldset.partners__fieldset
+                    label.order__label(for="partners-phone") Телефон
+                    input.input(type="tel" name="phone" id="partners-phone")
+                button.btn(type="submit" role="button" data-src="#modal-callback-success" data-fancybox) Заказать звонок
+
+    mixin partner(img, title)
+        article.partners__item._center(role="article")
+            .partners__picture
+                +picture('', 'jpeg',
+                    'img/tmp/webp/'+img+'@2x.webp', 'img/tmp/webp/'+img+'.webp',
+                    'img/tmp/'+img+'@2x.jpg', 'img/tmp/'+img+'.jpg', 190, 158)
+            h3.partners__title(role="heading")= title
+            p.partners__text Крупнейший банк России, а также транснациональный финансовый конгломерат. Свыше 14 тыс. отделений и около 300 тыс. сотрудников. Частый заказчик корпоративных тортов.
+
+    section.section
+        .container
+            h3(role="heading") Наши партнеры
+            .partners__items
+                +partner('partner-1', 'Сбербанк')
+                +partner('partner-2', 'LaserLand')
+                +partner('partner-3', 'ВТБ')
+                +partner('partner-4', 'Mailgroup')
+                +partner('partner-1', 'Сбербанк')
+                +partner('partner-2', 'LaserLand')
+                +partner('partner-3', 'ВТБ')
+                +partner('partner-4', 'Mailgroup')
+

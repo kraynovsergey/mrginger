@@ -1,0 +1,155 @@
+.home-slider {
+	position: relative;
+
+	@media (max-width: 700px) {
+		margin: 0 -15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&__slide {
+		border-radius: 15px;
+		overflow: hidden;
+
+		@media (max-width: 700px) {
+			width: 329px;
+		}
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	&__picture {
+		display: block;
+
+		& img {
+			width: 100%;
+			height: 340px;
+			object-fit: cover;
+
+			@media (max-width: 700px) {
+				height: 371px;
+			}
+		}
+	}
+
+	&__overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 50px 130px;
+		color: $color_background_card;
+
+		@media (max-width: 991px) {
+			padding: 30px 100px;
+		}
+
+		@media (max-width: 700px) {
+			padding: 25px;
+			justify-content: space-between;
+			align-items: stretch;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		color: $color_background_card;
+
+		@media (max-width: 700px) {
+			font-size: 3.33rem;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 40px;
+
+		@media (max-width: 700px) {
+			align-items: stretch;
+		}
+	}
+
+	&__text {
+		margin: 0;
+
+		@media (max-width: 700px) {
+			font-size: 1.16rem;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		height: 60px;
+		background: $color_secondary;
+		padding: 0 30px;
+		border-radius: 50px;
+		font-size: 1.14rem;
+		color: $color_background_card;
+		text-decoration: none;
+		margin-top: 30px;
+		border: 2px solid transparent;
+
+		@media (max-width: 700px) {
+			height: 44px;
+			padding: 0 20px;
+			margin-top: 20px;
+			width: 100%;
+			justify-content: center;
+		}
+
+		& svg {
+			fill: $color_background_card;
+			margin-left: 20px;
+
+			@media (max-width: 700px) {
+				display: none;
+			}
+		}
+
+		&:hover {
+			color: inherit;
+
+			@media (min-width: 992px) {
+				background: $color_background_card;
+				border-color: $color_secondary;
+				color: $color_secondary;
+
+				& svg {
+					fill: $color_secondary;
+				}
+			}
+		}
+	}
+
+	&__navigation {
+		@media (max-width: 700px) {
+			display: none;
+		}
+
+		&-btn {
+			&._prev {
+				left: 18px;
+			}
+			&._next {
+				right: 18px;
+			}
+		}
+	}
+
+	&__pagination {
+		@media (max-width: 700px) {
+			display: none;
+		}
+	}
+}

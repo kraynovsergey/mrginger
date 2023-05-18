@@ -1,0 +1,15 @@
+extends base
+
+block seo
+	- var seo = {title: 'Главная страница', description: '', keywords: ''}
+
+block main
+	include includes/_home-slider
+
+	include includes/_popular-categories
+
+	include includes/_best-products
+
+	include includes/_home-content
+
+	include includes/_home-pluses

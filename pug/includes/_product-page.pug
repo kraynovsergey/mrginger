@@ -1,0 +1,178 @@
+section.section.product-page
+    .container
+        h1._center Торт Batman №4
+
+        .product-page__header
+            .product-page__cols
+                .product-page__col._left
+                    .product-page__gallery.swiper
+                        .swiper-wrapper
+                            .swiper-slide
+                                +picture('product-page__picture', 'jpeg', 'img/tmp/webp/product-page@2x.webp', 'img/tmp/webp/product-page.webp', 'img/tmp/product-page@2x.jpg', 'img/tmp/product-page.jpg', 350, 350)
+                            .swiper-slide
+                                +picture('product-page__picture', 'jpeg', 'img/tmp/webp/product-page@2x.webp', 'img/tmp/webp/product-page.webp', 'img/tmp/product-page@2x.jpg', 'img/tmp/product-page.jpg', 350, 350)
+                            .swiper-slide
+                                +picture('product-page__picture', 'jpeg', 'img/tmp/webp/product-page@2x.webp', 'img/tmp/webp/product-page.webp', 'img/tmp/product-page@2x.jpg', 'img/tmp/product-page.jpg', 350, 350)
+
+                    .product-page__thumbs.swiper
+                        .swiper-wrapper
+                            .swiper-slide
+                                +picture('product-page__picture', 'jpeg', 'img/tmp/webp/product-page-thumb@2x.webp', 'img/tmp/webp/product-page-thumb.webp', 'img/tmp/product-page-thumb@2x.jpg', 'img/tmp/product-page-thumb.jpg', 90, 90)
+                            .swiper-slide
+                                +picture('product-page__picture', 'jpeg', 'img/tmp/webp/product-page-thumb@2x.webp', 'img/tmp/webp/product-page-thumb.webp', 'img/tmp/product-page-thumb@2x.jpg', 'img/tmp/product-page-thumb.jpg', 90, 90)
+                            .swiper-slide
+                                +picture('product-page__picture', 'jpeg', 'img/tmp/webp/product-page-thumb@2x.webp', 'img/tmp/webp/product-page-thumb.webp', 'img/tmp/product-page-thumb@2x.jpg', 'img/tmp/product-page-thumb.jpg', 90, 90)
+
+                .product-page__col._right
+                    .product-page__controls
+                        .product-page__controls-cols
+                            .product-page__controls-col._left
+                                .product-page__chooses
+                                    .product-page__chooses-block
+                                        .product-page__chooses-title Вес:
+                                        .product-page__chooses-count
+                                            +count
+                                            .product-page__chooses-count-note На 13 человек
+
+                                    .product-page__chooses-block
+                                        .product-page__chooses-title Начинка:
+                                        +filling_select
+                                        .product-page__filling-note Фирменная начинка (+300р./кг)
+
+                                    .product-page__chooses-block
+                                        .product-page__chooses-info
+                                            +picture('product-page__chooses-info-picture', 'jpeg', 'img/tmp/webp/product-chooses-info@2x.webp', 'img/tmp/webp/product-chooses-info.webp', 'img/tmp/product-chooses-info@2x.jpg', 'img/tmp/product-chooses-info.jpg', '160', '141')
+                                            .product-page__chooses-info-text
+                                                p Нежный бисквит с лавандовыми нотками, яркое черносмородиновое конфи с ягодами черники и сливочно-творожный крем с белым шоколадом
+                                                p._small
+                                                    em Яйца, сахар, мука, кефир, масло растительное, цветки лаванды, разрыхлитель, сыр творожный, сметана, сливки, шоколад белый, желатин, пюре черносмородиновое, черника, пектин
+
+                                    .product-page__chooses-block
+                                        .product-page__chooses-title Надпись на торте:
+                                        input.input(type="text")
+
+                            .product-page__controls-col._right
+                                form.product-page__cart
+                                    .product-page__price 4 580 ₽
+                                    button.product-page__order(type="button" role="button") Оформить заказ
+                                    button.product-page__to-cart(type="button" data-fancybox data-src="#add-to-cart" data-type="inline") В корзину
+                                        svg(width="20" height="21")
+                                            use(xlink:href="img/sprite.svg#cart")
+                                    .product-page__include
+                                        p Все включено!
+                                        p В цену торта включено оформление, фигурки, надписи, стандартный поднос, коробка. При изменении оформления, стоимость рассчитывается индивидуально по вашим предпочтениям. Цветовую гамму торта можем подобрать под Ваши предпочтения.
+                                    .product-page__actions
+                                        button.product-page__action(type="button" role="button")
+                                            .product-page__action-icon
+                                                svg(width="16" height="14")
+                                                    use(xlink:href="img/sprite.svg#favourite")
+                                            | добавить в избранное
+
+                                        button.product-page__action(type="button" role="button")
+                                            .product-page__action-icon
+                                                svg(width="16" height="16")
+                                                    use(xlink:href="img/sprite.svg#compare")
+                                            | добавить к сравнению
+
+        .product-page__content(data-tab-parent)
+            .product-page__tabs.no-scroll
+                button.product-page__tab._active(type="button" role="button" data-tab="tab-1") Описание
+                button.product-page__tab(type="button" role="button" data-tab="tab-2") Оплата
+                button.product-page__tab(type="button" role="button" data-tab="tab-3") Доставка
+                button.product-page__tab(type="button" role="button" data-tab="tab-4") Вес и ярусы
+                button.product-page__tab(type="button" role="button" data-tab="tab-5") Памятка употребления
+
+            .product-page__tabs-content._active(data-tab-content="tab-1")
+                h3.h3(role="heading") Характеристики товара:
+                .product-page__params-cols
+                    .product-page__params-col
+                        .product-page__params
+                            .product-page__param
+                                span Форма:
+                                span Круг
+                            .product-page__param
+                                span Срок хранения при t 0+4:
+                                span 5 суток
+                            .product-page__param
+                                span Упаковка:
+                                span Ламинированный поднос, Картонная упаковка
+                            .product-page__param
+                                span Производитель:
+                                span Аветорт (под заказ)
+                            .product-page__param
+                                span Тематика:
+                                span Торты на день рождения
+                            .product-page__param
+                                span Число ярусов:
+                                span 3
+                            .product-page__param
+                                span Оформление:
+                                span Аппликация, Живые цветы, Пищевая печать, Поздравительные надписи, Фигурки, Фигурная лепка,
+                            .product-page__param
+                                span Начинка на выбор:
+                                span На выбор (на каждый ярус)
+
+                    .product-page__params-col
+                        p Торт "Пчелка" - для маленьких непоседливых принцесс. Замечательная улыбчивая пчелка спешит на День Рождения Вашего малыша с горшочком меда. Самый вкусный мед - только недавно пчелка с своими подружками собрала нектар. А сейчас пчелка присела ненадолго отдохнуть и посмотреть, какая красота вокруг нее: цветы, насекомые, деревенская изгородь. В этот день у всех прекрасное настроение: даже розовые цветочки улыбаются. Вокруг летают миниатюрные бабочки. Этот тортик особенно понравится Вашей дочке, если она любит проводить время на природе. Настоящие пчелы могут больно ужалить, а наша пчелка никогда не делает ничего плохого. Хотите поднять настроение дочке и её гостям? Это так легко сделать в тортом "Пчелка". Купить его можно на сайте кондитерской "Алтуфьево".
+
+            .product-page__tabs-content(data-tab-content="tab-2")
+                h3.h3(role="heading") Оплата
+                p ЗАКАЗ МОЖНО ОПЛАТИТЬ У НАС НА ПУНКТЕ САМОВЫВОЗА ЛИБО ДИСТАНЦИОННО
+                p Время работы офиса: с 9.00 до 21.00 ч, ежедневно без выходных и праздничных дней.
+                p Способы оплаты:
+                ul
+                    li Оплата картой
+                    li Наличными
+                    li Оплата по расчётному счёту
+                    li Оплата через Юкассу
+
+            .product-page__tabs-content(data-tab-content="tab-3")
+                h3.h3(role="heading") Доставка
+                p Доставка кондитерских изделий осуществляется в один из выбранных временных интервалов, с 9:00 до 12:00/ с 12:00 до 15:00/ с 15:00 до 18:00/ с 18:00 до 21:00 в любой район Москвы в пределах МКАД, и в города Московской области до 70 км. от МКАД.
+                p При заказе торта от 3 000 р. - бесплатная доставка по Москве (внутри МКАД) либо скидка 10% при самовывозе.
+                p Стоимость доставки десертов - от 500 р. по Москве.
+                p По Московской области стоимость доставки десертов и тортов рассчитывается индивидуально.
+
+            .product-page__tabs-content(data-tab-content="tab-4")
+                h3.h3(role="heading") Вес и ярусы
+
+                mixin stage(icon, title, weight, people)
+                    .product-page__stage
+                        .product-page__stage-icon
+                            svg(width="190" height="165")
+                                use(xlink:href="img/sprite.svg#"+icon)
+                        .product-page__stage-title= title
+                        .product-page__stage-items
+                            .product-page__stage-item
+                                svg(width="28" height="24")
+                                    use(xlink:href="img/sprite.svg#weight")
+                                = weight
+
+                            .product-page__stage-item
+                                .product-page__stage-item-icon
+                                svg(width="28" height="24")
+                                    use(xlink:href="img/sprite.svg#people")
+                                = people
+
+                .product-page__stage-cols
+                    .product-page__stage-col
+                        +stage('stage-1', '1 ярус', '2–4 кг', 'до 20 человек')
+                    .product-page__stage-col
+                        +stage('stage-2', '2 яруса', '5–7 кг', 'до 35 человек')
+                    .product-page__stage-col
+                        +stage('stage-3', '3 яруса', '8–11 кг', 'до 55 человек')
+                    .product-page__stage-col
+                        +stage('stage-4', '4 яруса', '12–15 кг', 'до 75 человек')
+                    .product-page__stage-col
+                        +stage('stage-5', '5 ярусов', '15–20 кг', 'до 100 человек')
+
+            .product-page__tabs-content(data-tab-content="tab-5")
+                h3.h3(role="heading") Памятка употребления
+                p Готовый торт хранится только в холодильнике.
+                p Допустимый температурный режим от 2-х до 6-ти градусов Цельсия
+                p Предельный срок хранения – 72 часа.
+                p Перед употреблением торта предварительно необходимо снять все несъедобные детали, если они присутствуют на торте (мы о них предупреждаем перед отдачей торта и непосредственно при обсуждении заказа).
+                p Не употребляйте оставшийся торт на третьи и более сутки и, тем более, не давайте такой торт детям (При изготовлении использованы натуральные продукты без консервантов, и имеют ограниченный срок хранения).
+                p Сахарная мастика для покрытия торта – съедобная красивая упаковка и кушать ее можно, но не обязательно. Она легко снимается с кусочка. Оцените по достоинству вкус начинки.
+                p Для любителей ярких, порой кислотных цветов. Для получения яркого цвета требуется использовать много красителя, вы должны это учитывать и понимать, особенно при выборе детских тортов. Современный уровень развития пищевого производства обеспечивает кондитеров натуральными и абсолютно безвредными пищевыми красителями, но при этом они не перестают быть красителями.
+                p Не забудьте предупредить кондитера о том, на что у ребенка есть аллергия (если есть).

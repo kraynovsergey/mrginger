@@ -1,0 +1,86 @@
+form.filter(role="form")
+    .filter__col
+        .filter__item(data-filter-value-parent data-filter-show-parent)
+            button.filter__title(type="button" role="button" data-filter-show) Сортировать по
+                span(data-filter-value-target)
+            .filter__variants
+                .filter__variant
+                    input.filter__variant-input(type="radio" name="popular" value="популярности" id="filter-sort-1" data-filter-value)
+                    label.filter__variant-label(for="filter-sort-1")
+                        span.filter__variant-check
+                        | По популярности
+                .filter__variant
+                    input.filter__variant-input(type="radio" name="popular" value="цене" id="filter-sort-2" data-filter-value)
+                    label.filter__variant-label(for="filter-sort-2")
+                        span.filter__variant-check
+                        | По цене
+                .filter__variant
+                    input.filter__variant-input(type="radio" name="popular" value="дате" id="filter-sort-3" data-filter-value)
+                    label.filter__variant-label(for="filter-sort-3")
+                        span.filter__variant-check
+                        | По дате
+
+    .filter__col
+        .filter__item(data-filter-show-parent)
+            button.filter__title(type="button" role="button" data-filter-show) Цена за кг
+            .filter__variants
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="price[]" value="от 1000" id="filter-price-1")
+                    label.filter__variant-label(for="filter-price-1")
+                        span.filter__variant-check
+                        | от 1000
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="price[]" value="от 2000" id="filter-price-2")
+                    label.filter__variant-label(for="filter-price-2")
+                        span.filter__variant-check
+                        | от 2000
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="price[]" value="от 3000" id="filter-price-3")
+                    label.filter__variant-label(for="filter-price-3")
+                        span.filter__variant-check
+                        | от 3000
+
+    .filter__col
+        .filter__item._choose(data-filter-show-parent)
+            button.filter__title(type="button" role="button" data-filter-show) Ярусы
+            .filter__variants
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="stage[]" value="1" id="filter-stage-1" checked)
+                    label.filter__variant-label(for="filter-stage-1")
+                        span.filter__variant-check
+                        | 1
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="stage[]" value="2" id="filter-stage-2")
+                    label.filter__variant-label(for="filter-stage-2")
+                        span.filter__variant-check
+                        | 2
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="stage[]" value="3" id="filter-stage-3")
+                    label.filter__variant-label(for="filter-stage-3")
+                        span.filter__variant-check
+                        | 3
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="stage[]" value="4" id="filter-stage-4")
+                    label.filter__variant-label(for="filter-stage-4")
+                        span.filter__variant-check
+                        | 4
+
+    .filter__col
+        .filter__item(data-filter-show-parent)
+            button.filter__title(type="button" role="button" data-filter-show) Тематика
+            .filter__variants
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="subject[]" value="AmongUs" id="filter-subject-1")
+                    label.filter__variant-label(for="filter-subject-1")
+                        span.filter__variant-check
+                        | AmongUs
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="subject[]" value="Аниме" id="filter-subject-3")
+                    label.filter__variant-label(for="filter-subject-3")
+                        span.filter__variant-check
+                        | Аниме
+                .filter__variant
+                    input.filter__variant-input(type="checkbox" name="subject[]" value="Без мастики" id="filter-subject-4")
+                    label.filter__variant-label(for="filter-subject-4")
+                        span.filter__variant-check
+                        | Без мастики

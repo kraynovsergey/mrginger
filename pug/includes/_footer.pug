@@ -1,0 +1,55 @@
+mixin li(title, href)
+    li.footer__list-item(role="listitem")
+        a.footer__list-link(href= href role="link")= title
+
+footer.footer(role="contentinfo")
+    .container
+        .footer__cols
+            .footer__col._left
+                nav.footer__nav(role="navigation")
+                    ul.footer__list(role="list")
+                        +li('Доставка', 'delivery.html')
+                        +li('Оплата', 'payment.html')
+                        +li('Акции', 'sales.html')
+                        +li('Цены', 'prices.html')
+                        +li('Начинки', 'filings.html')
+                        +li('Каталог', 'catalog.html')
+                        +li('Частые вопросы', '#')
+
+                nav.footer__nav(role="navigation")
+                    ul.footer__list(role="list")
+                        +li('О нас', 'about.html')
+                        +li('Наша команда', '#')
+                        +li('Новости', '#')
+                        +li('Отзывы', 'reviews.html')
+                        +li('Партнерам', 'partners.html')
+                        +li('Сертификаты и лицензии', '#')
+                        +li('Соглашение и правила', '#')
+                        +li('Контакты', 'contacts.html')
+
+            .footer__col._right
+                address.footer__address
+                    .footer__address-item Москва, Азовская 24 к.3, ТРЦ Азовский, 3 этаж, м.Севастопольская
+                    .footer__address-item._semibold Ежедневно 10:00 - 21:00
+
+                address.footer__contacts
+                    .footer__contacts-links
+                        a.footer__contacts-link._phone(href="tel:+74951810801" role="link") +7 (495) 181-08-01
+                        a.footer__contacts-link(href="mailto:zakaz@mrginger.ru" role="link") zakaz@mrginger.ru
+
+                    .footer__socials
+                        a.footer__social(href="https://vk.com/" target="_blank" rel="nofollow" role="link" aria-label="vk.com")
+                            svg(width="28" height="28")
+                                use(xlink:href="img/sprite.svg#vk")
+                        a.footer__social(href="https://instagram.com/" target="_blank" rel="nofollow" role="link" aria-label="instagram.com")
+                            svg(width="28" height="28")
+                                use(xlink:href="img/sprite.svg#instagram")
+
+                .footer__info
+                    .footer__logo
+                        svg(width="157" height="88")
+                            use(xlink:href="img/sprite.svg#logo")
+                    .footer__copyright © 2020 Mr.Ginger
+
+
+                    

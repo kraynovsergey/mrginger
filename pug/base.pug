@@ -1,0 +1,22 @@
+doctype html
+block html
+html(lang="ru")
+    head
+        block seo
+            - var seo = {title: '', description: '', keywords: ''}
+        include includes/_meta
+
+    body
+        include includes/_mixin
+
+        include includes/_header
+
+        main.main(role="main")
+            block main
+
+
+        include includes/_footer
+
+        include includes/_modal
+
+        include includes/_scripts

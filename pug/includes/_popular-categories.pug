@@ -1,0 +1,47 @@
+section.section(data-tab-parent)
+    .container
+        h2.section__title.h1._center(role="heading") Популярные категории
+
+        .popular-category__tabs.no-scroll
+            button.popular-category__tab._active(type="button" data-tab="tab-1" role="button") Свадебные
+            button.popular-category__tab(type="button" data-tab="tab-2" role="button") Детские
+            button.popular-category__tab(type="button" data-tab="tab-3" role="button") Лучшие категории
+
+        .popular-category__content._active(data-tab-content="tab-1")
+            .popular-category__swiper.swiper
+                .swiper-wrapper
+                    .popular-category__slide.swiper-slide
+                        +category('Классические', 'category-1', 255, 270)
+                    .popular-category__slide.swiper-slide
+                        +category('С живыми цветами', 'category-2', 255, 270)
+                    .popular-category__slide.swiper-slide
+                        +category('С ягодами', 'category-3', 255, 270)
+                    .popular-category__slide.swiper-slide
+                        +category('Большие', 'category-4', 255, 270)
+
+        .popular-category__content(data-tab-content="tab-2")
+            .popular-category__swiper.swiper
+                .swiper-wrapper
+                    .popular-category__slide.swiper-slide
+                        +category('Большие', 'category-3', 255, 270)
+                    .popular-category__slide.swiper-slide
+                        +category('Классические', 'category-1', 255, 270)
+                    .popular-category__slide.swiper-slide
+                        +category('С живыми цветами', 'category-2', 255, 270)
+                    .popular-category__slide.swiper-slide
+                        +category('С ягодами', 'category-4', 255, 270)
+
+        .popular-category__content(data-tab-content="tab-3")
+            .popular-category__swiper.swiper
+                .swiper-wrapper
+                    .popular-category__slide.swiper-slide
+                        +category('Большие', 'category-3', 255, 270)
+                    .popular-category__slide.swiper-slide
+                        +category('С живыми цветами', 'category-2', 255, 270)
+                    .popular-category__slide.swiper-slide
+                        +category('Классические', 'category-1', 255, 270)
+                    .popular-category__slide.swiper-slide
+                        +category('С ягодами', 'category-4', 255, 270)
+
+
+

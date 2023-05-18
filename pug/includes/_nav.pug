@@ -1,0 +1,42 @@
+nav.nav(role="navigation")
+    ul.nav__list(role="list")
+        each item in mainnav
+            li.nav__list-item(role="listitem")
+                if item.catalog
+                    a.nav__list-link(href= item.href role="link" data-prevent data-nav)
+                        svg(width="15" height="14")
+                            use(xlink:href="img/sprite.svg#catalog")
+                        = item.title
+
+                    .nav__submenu
+                        .container.nav__submenu-scroll
+                            ul.nav__submenu-list(role="list")
+                                each subitem in item.subnav
+                                    li.nav__submenu-list-item(role="listitem")
+                                        if subitem.children
+                                            a.nav__submenu-list-link(href= subitem.href role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile)
+                                                svg(width="20" height="23")
+                                                    use(xlink:href= subitem.icon)
+                                                = subitem.title
+                                            .nav__lastmenu
+                                                ul.nav__lastmenu-list(role="list")
+                                                    each lastitem in subitem.lastnav
+                                                        li.nav__lastmenu-list-item(role="listitem")
+                                                            a.nav__lastmenu-list-link(href= lastitem.href role="link")= lastitem.title
+
+                                                +picture(
+                                                    'nav__lastmenu-picture',
+                                                    'png',
+                                                    'img/tmp/webp/nav-img-1@2x.webp',
+                                                    'img/tmp/webp/nav-img-1.webp',
+                                                    'img/tmp/nav-img-1@2x.png',
+                                                    'img/tmp/nav-img-1.png',
+                                                    '432', '531')
+                                        else
+                                            a.nav__submenu-list-link(href= subitem.href role="link")
+                                                svg(width="20" height="23")
+                                                    use(xlink:href= subitem.icon)
+                                                = subitem.title
+
+                else
+                    a.nav__list-link(href= item.href role="link")= item.title

@@ -1,0 +1,31 @@
+.best-products {
+	&__carousel {
+		padding: 20px;
+		margin: -20px;
+
+		@media (max-width: 700px) {
+			margin: 0 -15px;
+			padding: 0 15px;
+		}
+	}
+	
+	&__slide {
+		height: unset;
+
+		@media (max-width: 700px) {
+			width: 315px;
+		}
+	}
+
+	&__navigation {
+		display: none;
+
+		@media (max-width: 700px) {
+			display: none !important;
+		}
+
+		&._active {
+			display: flex;
+		}
+	}
+}

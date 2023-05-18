@@ -1,0 +1,143 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-MediumItalic.eot');
+	src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'),
+	url('../fonts/Montserrat-MediumItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-MediumItalic.woff') format('woff'),
+	url('../fonts/Montserrat-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-BoldItalic.eot');
+	src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'),
+	url('../fonts/Montserrat-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-BoldItalic.woff') format('woff'),
+	url('../fonts/Montserrat-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBold.eot');
+	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+	url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+	url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Italic.eot');
+	src: local('Montserrat Italic'), local('Montserrat-Italic'),
+	url('../fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-Italic.woff') format('woff'),
+	url('../fonts/Montserrat-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.eot');
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+	url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-Bold.woff') format('woff'),
+	url('../fonts/Montserrat-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBoldItalic.eot');
+	src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'),
+	url('../fonts/Montserrat-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-SemiBoldItalic.woff') format('woff'),
+	url('../fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+	url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-Regular.woff') format('woff'),
+	url('../fonts/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Medium.eot');
+	src: local('Montserrat Medium'), local('Montserrat-Medium'),
+	url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-Medium.woff') format('woff'),
+	url('../fonts/Montserrat-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Philosopher';
+	src: url('../fonts/Philosopher-Bold.eot');
+	src: local('Philosopher Bold'), local('Philosopher-Bold'),
+	url('../fonts/Philosopher-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Philosopher-Bold.woff') format('woff'),
+	url('../fonts/Philosopher-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Philosopher';
+	src: url('../fonts/Philosopher-BoldItalic.eot');
+	src: local('Philosopher Bold Italic'), local('Philosopher-BoldItalic'),
+	url('../fonts/Philosopher-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Philosopher-BoldItalic.woff') format('woff'),
+	url('../fonts/Philosopher-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Philosopher';
+	src: url('../fonts/Philosopher.eot');
+	src: local('Philosopher'),
+	url('../fonts/Philosopher.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Philosopher.woff') format('woff'),
+	url('../fonts/Philosopher.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Philosopher';
+	src: url('../fonts/Philosopher-Italic.eot');
+	src: local('Philosopher Italic'), local('Philosopher-Italic'),
+	url('../fonts/Philosopher-Italic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Philosopher-Italic.woff') format('woff'),
+	url('../fonts/Philosopher-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}

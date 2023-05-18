@@ -1,0 +1,534 @@
+-
+    var topnav = [
+        {
+            title: 'О нас',
+            href: 'about.html'
+        },
+        {
+            title: 'Доставка',
+            href: 'delivery.html'
+        },
+        {
+            title: 'Оплата',
+            href: 'payment.html'
+        },
+        {
+            title: 'Статьи',
+            href: 'articles.html'
+        },
+        {
+            title: 'Отзывы',
+            href: 'reviews.html'
+        }
+    ]
+
+-
+    var mainnav = [
+        {
+            title: 'Каталог',
+            href: 'catalog.html',
+            catalog: true,
+            subnav: [
+                {
+                    title: 'Торты на день рождения',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-1',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'Маме',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Папе',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Для женщины',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Для мужчины',
+                            href: 'catalog.html'
+                        }
+                    ]
+                },
+                {
+                    title: 'Свадебные торты',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-2',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'С ягодами',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Без мастики',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'С живыми цветами',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'В виде сердца',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Прикольные',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Классические',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'С гипсофилой',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Большие',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Маленькие',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Необычные',
+                            href: 'catalog.html'
+                        }
+                    ]
+                },
+                {
+                    title: 'Детские торты',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-3',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'Для мальчика',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Для девочки',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Для двойняшек',
+                            href: 'catalog.html'
+                        }
+                    ]
+                },
+                {
+                    title: 'Праздничные торты',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-4',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'На юбилей',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'С фотопечатью',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Торты цифра',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'На 23 февраля',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'На Новый Год',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'На 8 марта',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'На хэллоуин',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'На 1 сентября',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'На выпускной',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'С паспортом',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'На годовщину',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'На крестины',
+                            href: 'catalog.html'
+                        },
+                    ]
+                },
+                {
+                    title: 'Готовые торты',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-5',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'На день рождения',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Детские торты',
+                            href: 'catalog.html'
+                        }
+                    ]
+                },
+                {
+                    title: 'Эксклюзивные торты',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-6',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'Эксклюзивные свадебные торты',
+                            href: 'catalog.html'
+                        }
+                    ]
+                },
+                {
+                    title: 'Классические торты',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-7'
+                },
+                {
+                    title: 'Специальные торты',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-8',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'Веганские',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Для диабетиков',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Без добавления яиц',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Без сахара',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Без глютена',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Для беременных',
+                            href: 'catalog.html'
+                        }
+                    ]
+                },
+                {
+                    title: 'Торты без мастики',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-9',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'Мужчине',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Женщине',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Детские',
+                            href: 'catalog.html'
+                        }
+                    ]
+                },
+                {
+                    title: 'Замороженные торты',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-10',
+                },
+                {
+                    title: 'Торты с надписью',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-11'
+                },
+                {
+                    title: 'Торты срочно',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-12'
+                },
+                {
+                    title: 'Десерты',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-13',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'Капкейки',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Макаруны',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Пирожные',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Тарталетки',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Чизкейки',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Эклеры',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Кейк-попсы',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Кэнди бар',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Леденцы',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Конфеты',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Пряники',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Безглютеновые десерты',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Маффины',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Безлактозные десерты',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'RAW десерты',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Шоколад ручной работы',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Эскимо',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Десерты в баночках',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Безе',
+                            href: 'catalog.html'
+                        },
+                    ]
+                },
+                {
+                    title: 'Украшения и подарки',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-14',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'Вафельные украшения',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Конфетти',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Леденцы',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Мастика',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Новогодние украшения',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Пряники',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Свечи',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Топперы',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Фигурки',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Фонтаны из шаров',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Шары для украшения торта',
+                            href: 'catalog.html'
+                        },
+                    ]
+                },
+                {
+                    title: 'Упаковка',
+                    href: 'catalog.html',
+                    icon: 'img/sprite.svg#nav-15',
+                    children: true,
+                    lastnav: [
+                        {
+                            title: 'Коробки для тортов',
+                            href: 'catalog.html'
+                        },
+                        {
+                            title: 'Упаковка для макарун',
+                            href: 'catalog.html'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            title: 'Цены',
+            href: 'prices.html',
+            catalog: false
+        },
+        {
+            title: 'Начинки',
+            href: 'filings.html',
+            catalog: false
+        },
+        {
+            title: 'Акции',
+            href: 'sales.html',
+            catalog: false
+        },
+        {
+            title: 'Контакты',
+            href: 'contacts.html',
+            catalog: false
+        }
+    ]
+
+header.header(role="banner")
+    .header__top
+        .container
+            nav.header__top-nav(role="navigation")
+                ul.header__top-list(role="list")
+                    each item in topnav
+                        li.header__top-list-item(role="listitem")
+                            a.header__top-list-link(href= item.href role="link")= item.title
+
+    .header__middle
+        .container
+            .header__middle-cols
+                .header__middle-col
+                    a.header__logo(href="home.html")
+                        svg(width="123" height="69")
+                            use(xlink:href="img/sprite.svg#logo")
+
+                .header__middle-col._nav
+                    nav.nav(role="navigation")
+                        ul.nav__list(role="list")
+                            each item in mainnav
+                                li.nav__list-item(role="listitem")
+                                    if item.catalog
+                                        a.nav__list-link(href= item.href role="link" data-prevent data-nav)
+                                            svg(width="15" height="14")
+                                                use(xlink:href="img/sprite.svg#catalog")
+                                            = item.title
+                                    else
+                                        a.nav__list-link(href= item.href role="link")= item.title
+
+                .header__middle-col._address
+                    include _header-address
+
+                .header__middle-col._burger
+                    button.header__burger(type="button" role="button" aria-label="Меню" data-burger)
+                        span
+                        span
+                        span
+
+                .header__middle-col._stretch._search
+                    include _header-search
+
+                .header__middle-col._contacts
+                    .header__controls
+                        a.header__control(href="#" role="link" aria-label="Сравнить")
+                            svg(width="23" height="20")
+                                use(xlink:href="img/sprite.svg#compare")
+                            span.header__control-count 5
+                        a.header__control(href="#" role="link" aria-label="Избранное")
+                            svg(width="23" height="20")
+                                use(xlink:href="img/sprite.svg#favourite")
+                            span.header__control-count 5
+                        a.header__control(href="#" role="link" aria-label="Корзина")
+                            svg(width="21" height="20")
+                                use(xlink:href="img/sprite.svg#cart")
+                            span.header__control-count 5
+
+                    include _header-contacts
+
+    .header__bottom
+        .container
+            include _header-search
+            include _nav
+            include _header-address
+            include _header-contacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+

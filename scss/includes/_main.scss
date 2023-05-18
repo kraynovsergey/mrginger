@@ -1,0 +1,13 @@
+.main {
+	padding-top: 258px;
+	padding-bottom: 40px;
+
+	@media (max-width: 991px) {
+		padding-top: 239px;
+		padding-bottom: 20px;
+	}
+
+	@media (max-width: 700px) {
+		padding-top: 188px;
+	}
+}

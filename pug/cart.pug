@@ -1,0 +1,76 @@
+extends base
+
+block seo
+    - var seo = {title: 'Корзина', description: '', keywords: ''}
+
+block main
+    include includes/_breadcrumbs
+
+    mixin cart_item
+        .cart__item
+            .cart__cols
+                .cart__col._photo
+                    .cart__col-item
+                        .cart__col-title Фото
+                        .cart__col-content
+                            +picture('cart__picture', 'jpeg', 'img/tmp/webp/product-page-thumb@2x.webp', 'img/tmp/webp/product-page-thumb.webp', 'img/tmp/product-page-thumb@2x.jpg', 'img/tmp/product-page-thumb.jpg', 119, 119)
+                .cart__col._title
+                    .cart__col-item
+                        .cart__col-title Наименование
+                        .cart__col-content
+                            a.cart__title(href="product.html") Торт Batman №4
+                .cart__col._row
+                    .cart__col-item
+                        .cart__col-title Надпись на торте
+                        .cart__col-content
+                            input.input(type="text")
+                .cart__col._filling
+                    .cart__col-item
+                        .cart__col-title Начинка
+                        .cart__col-content
+                            +filling_select
+                .cart__col._weight
+                    .cart__col-item
+                        .cart__col-title Вес
+                        .cart__col-content
+                            +count
+                .cart__col._price
+                    .cart__col-item
+                        .cart__col-title Вес
+                        .cart__col-content
+                            .cart__price 4 580 ₽
+                .cart__col._remove
+                    .cart__remove
+                        button.cart__remove-btn(type="button" role="button")
+                            svg(width="16" height="18")
+                                use(xlink:href="img/sprite.svg#remove")
+
+    section.section
+        .container
+            h1 Корзина
+            .cart
+                .cart__box
+                    .cart__header
+                        .cart__cols
+                            .cart__col._photo Фото
+                            .cart__col._title Наименование
+                            .cart__col._row Надпись на торте
+                            .cart__col._filling Начинка
+                            .cart__col._weight Вес
+                            .cart__col._price Цена за кг
+                            .cart__col._remove
+                    +cart_item
+                    +cart_item
+
+                .cart__itogo Итоговая стоимость
+                    span.cart__itogo-price 10 170 ₽
+
+            .cart-banner
+                +picture('cart-banner__picture', 'jpeg', 'img/tmp/webp/cart-banner@2x.webp', 'img/tmp/webp/cart-banner.webp', 'img/tmp/cart-banner@2x.jpg', 'img/tmp/cart-banner.jpg', 350, 121)
+                .cart-banner__content
+                    .cart-banner__title Фонтан из шаров в подарок
+                    .cart-banner__text При заказе торта от 5 000 ₽ – фонтан из шаров в подарок!
+
+            .cart__btns
+                a.cart__btn._bordered(href="catalog.html" role="link") Продолжить покупки
+                a.cart__btn._blue(href="order.html" role="link") Оформить заказ

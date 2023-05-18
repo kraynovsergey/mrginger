@@ -1,0 +1,31 @@
+mixin slide
+    .home-slider__slide.swiper-slide
+        .home-slider__item
+            picture.home-slider__picture
+                source(type="image/webp" srcset="img/tmp/webp/home-slider@2x.webp 2x, img/tmp/webp/home-slider.webp 1x" media="(min-width: 992px)")
+                source(type="image/jpeg" srcset="img/tmp/home-slider@2x.jpg 2x, img/tmp/home-slider.jpg 1x" media="(min-width: 992px)")
+                source(type="image/webp" srcset="img/tmp/webp/home-slider-tablet@2x.webp 2x, img/tmp/webp/home-slider-tablet.webp 1x" media="(max-width: 991px) and (min-width: 701px)")
+                source(type="image/jpeg" srcset="img/tmp/home-slider-tablet@2x.jpg 2x, img/tmp/home-slider-tablet.jpg 1x" media="(max-width: 991px) and (min-width: 701px)")
+                source(type="image/webp" srcset="img/tmp/webp/home-slider-mobile@2x.webp 2x, img/tmp/webp/home-slider-mobile.webp 1x" media="(max-width: 700px)")
+                source(type="image/jpeg" srcset="img/tmp/home-slider-mobile@2x.jpg 2x, img/tmp/home-slider-mobile.jpg 1x" media="(max-width: 700px)")
+                img(src="img/tmp/home-slider.jpg" alt="Торты на заказ" width="1140" height="340" loading="lazy")
+            .home-slider__overlay
+                p.home-slider__title.h1 Торты на заказ
+                .home-slider__content
+                    p.home-slider__text Описание баннера
+                    a.home-slider__link(href="catalog.html" role="link") Заказать индивидуальный торт
+                        svg(width="24" height="20")
+                            use(xlink:href="img/sprite.svg#arrow")
+
+section.section._pt0
+    .container
+        .home-slider.swiper
+            .home-slider__wrapper.swiper-wrapper
+                +slide
+                +slide
+                +slide
+            .home-slider__navigation.navigation
+                +navigation('home-slider__navigation-btn', '_prev')
+                +navigation('home-slider__navigation-btn', '_next')
+        +pagination('home-slider__pagination')
+

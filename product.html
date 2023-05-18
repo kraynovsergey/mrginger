@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Товар</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <link rel="stylesheet" href="css/libs/datepicker.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header__top">
+        <div class="container">
+          <nav class="header__top-nav" role="navigation">
+            <ul class="header__top-list" role="list">
+              <li class="header__top-list-item" role="listitem"><a class="header__top-list-link" href="about.html" role="link">О нас</a></li>
+              <li class="header__top-list-item" role="listitem"><a class="header__top-list-link" href="delivery.html" role="link">Доставка</a></li>
+              <li class="header__top-list-item" role="listitem"><a class="header__top-list-link" href="payment.html" role="link">Оплата</a></li>
+              <li class="header__top-list-item" role="listitem"><a class="header__top-list-link" href="articles.html" role="link">Статьи</a></li>
+              <li class="header__top-list-item" role="listitem"><a class="header__top-list-link" href="reviews.html" role="link">Отзывы</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__middle">
+        <div class="container">
+          <div class="header__middle-cols">
+            <div class="header__middle-col"><a class="header__logo" href="home.html">
+                <svg width="123" height="69">
+                  <use xlink:href="img/sprite.svg#logo"></use>
+                </svg></a></div>
+            <div class="header__middle-col _nav">
+              <nav class="nav" role="navigation">
+                <ul class="nav__list" role="list">
+                  <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="catalog.html" role="link" data-prevent data-nav>
+                      <svg width="15" height="14">
+                        <use xlink:href="img/sprite.svg#catalog"></use>
+                      </svg>Каталог</a>
+                  </li>
+                  <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="prices.html" role="link">Цены</a>
+                  </li>
+                  <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="filings.html" role="link">Начинки</a>
+                  </li>
+                  <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="sales.html" role="link">Акции</a>
+                  </li>
+                  <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="contacts.html" role="link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__middle-col _address">
+              <address class="header__address">
+                <div class="header__address-item">Москва, Азовская 24, к. 3</div>
+                <div class="header__address-item _semibold">Ежедневно 10:00 - 21:00</div>
+              </address>
+            </div>
+            <div class="header__middle-col _burger">
+              <button class="header__burger" type="button" role="button" aria-label="Меню" data-burger><span></span><span></span><span></span></button>
+            </div>
+            <div class="header__middle-col _stretch _search">
+              <form class="header__search" action="#" method="post" role="form">
+                <input class="header__search-input" type="text" name="search" placeholder="Поиск" autocomplete="off">
+                <button class="header__search-submit" type="submit" role="button" aria-label="Поиск">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="header__middle-col _contacts">
+              <div class="header__controls"><a class="header__control" href="#" role="link" aria-label="Сравнить">
+                  <svg width="23" height="20">
+                    <use xlink:href="img/sprite.svg#compare"></use>
+                  </svg><span class="header__control-count">5</span></a><a class="header__control" href="#" role="link" aria-label="Избранное">
+                  <svg width="23" height="20">
+                    <use xlink:href="img/sprite.svg#favourite"></use>
+                  </svg><span class="header__control-count">5</span></a><a class="header__control" href="#" role="link" aria-label="Корзина">
+                  <svg width="21" height="20">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg><span class="header__control-count">5</span></a></div>
+              <address class="header__contacts">
+                <div class="header__contacts-links"><a class="header__contacts-link _phone" href="tel:+74951810801" role="link">+7 (495) 181-08-01</a><a class="header__contacts-link" href="mailto:zakaz@mrginger.ru" role="link">zakaz@mrginger.ru</a></div>
+                <div class="header__socials"><a class="header__social" href="https://vk.com/" target="_blank" rel="nofollow" role="link" aria-label="vk.com">
+                    <svg width="28" height="28">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg></a><a class="header__social" href="https://instagram.com/" target="_blank" rel="nofollow" role="link" aria-label="instagram.com">
+                    <svg width="28" height="28">
+                      <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg></a></div>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <form class="header__search" action="#" method="post" role="form">
+            <input class="header__search-input" type="text" name="search" placeholder="Поиск" autocomplete="off">
+            <button class="header__search-submit" type="submit" role="button" aria-label="Поиск">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <nav class="nav" role="navigation">
+            <ul class="nav__list" role="list">
+              <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="catalog.html" role="link" data-prevent data-nav>
+                  <svg width="15" height="14">
+                    <use xlink:href="img/sprite.svg#catalog"></use>
+                  </svg>Каталог</a>
+                <div class="nav__submenu">
+                  <div class="container nav__submenu-scroll">
+                    <ul class="nav__submenu-list" role="list">
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-1"></use>
+                          </svg>Торты на день рождения</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Маме</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Папе</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Для женщины</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Для мужчины</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-2"></use>
+                          </svg>Свадебные торты</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">С ягодами</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Без мастики</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">С живыми цветами</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">В виде сердца</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Прикольные</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Классические</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">С гипсофилой</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Большие</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Маленькие</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Необычные</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-3"></use>
+                          </svg>Детские торты</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Для мальчика</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Для девочки</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Для двойняшек</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-4"></use>
+                          </svg>Праздничные торты</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На юбилей</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">С фотопечатью</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Торты цифра</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На 23 февраля</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На Новый Год</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На 8 марта</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На хэллоуин</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На 1 сентября</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На выпускной</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">С паспортом</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На годовщину</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На крестины</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-5"></use>
+                          </svg>Готовые торты</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">На день рождения</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Детские торты</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-6"></use>
+                          </svg>Эксклюзивные торты</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Эксклюзивные свадебные торты</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link">
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-7"></use>
+                          </svg>Классические торты</a>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-8"></use>
+                          </svg>Специальные торты</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Веганские</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Для диабетиков</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Без добавления яиц</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Без сахара</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Без глютена</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Для беременных</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-9"></use>
+                          </svg>Торты без мастики</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Мужчине</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Женщине</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Детские</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link">
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-10"></use>
+                          </svg>Замороженные торты</a>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link">
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-11"></use>
+                          </svg>Торты с надписью</a>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link">
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-12"></use>
+                          </svg>Торты срочно</a>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-13"></use>
+                          </svg>Десерты</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Капкейки</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Макаруны</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Пирожные</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Тарталетки</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Чизкейки</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Эклеры</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Кейк-попсы</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Кэнди бар</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Леденцы</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Конфеты</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Пряники</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Безглютеновые десерты</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Маффины</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Безлактозные десерты</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">RAW десерты</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Шоколад ручной работы</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Эскимо</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Десерты в баночках</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Безе</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-14"></use>
+                          </svg>Украшения и подарки</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Вафельные украшения</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Конфетти</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Леденцы</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Мастика</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Новогодние украшения</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Пряники</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Свечи</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Топперы</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Фигурки</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Фонтаны из шаров</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Шары для украшения торта</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                      <li class="nav__submenu-list-item" role="listitem"><a class="nav__submenu-list-link" href="catalog.html" role="link" data-prevent data-toggle data-toggle-accordion="ul" data-toggle-accordion-mobile>
+                          <svg width="20" height="23">
+                            <use xlink:href="img/sprite.svg#nav-15"></use>
+                          </svg>Упаковка</a>
+                        <div class="nav__lastmenu">
+                          <ul class="nav__lastmenu-list" role="list">
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Коробки для тортов</a></li>
+                            <li class="nav__lastmenu-list-item" role="listitem"><a class="nav__lastmenu-list-link" href="catalog.html" role="link">Упаковка для макарун</a></li>
+                          </ul>
+                              <picture class="nav__lastmenu-picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/nav-img-1@2x.webp 2x, img/tmp/webp/nav-img-1.webp 1x" srcset="">
+                                <source type="image/png" data-srcset="img/tmp/nav-img-1@2x.png 2x, img/tmp/nav-img-1.png 1x" srcset=""><img class="lazy" data-src="img/tmp/nav-img-1.png" src="" alt="" width="432" height="531">
+                              </picture>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="prices.html" role="link">Цены</a>
+              </li>
+              <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="filings.html" role="link">Начинки</a>
+              </li>
+              <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="sales.html" role="link">Акции</a>
+              </li>
+              <li class="nav__list-item" role="listitem"><a class="nav__list-link" href="contacts.html" role="link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header__address">
+            <div class="header__address-item">Москва, Азовская 24, к. 3</div>
+            <div class="header__address-item _semibold">Ежедневно 10:00 - 21:00</div>
+          </address>
+          <address class="header__contacts">
+            <div class="header__contacts-links"><a class="header__contacts-link _phone" href="tel:+74951810801" role="link">+7 (495) 181-08-01</a><a class="header__contacts-link" href="mailto:zakaz@mrginger.ru" role="link">zakaz@mrginger.ru</a></div>
+            <div class="header__socials"><a class="header__social" href="https://vk.com/" target="_blank" rel="nofollow" role="link" aria-label="vk.com">
+                <svg width="28" height="28">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg></a><a class="header__social" href="https://instagram.com/" target="_blank" rel="nofollow" role="link" aria-label="instagram.com">
+                <svg width="28" height="28">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg></a></div>
+          </address>
+        </div>
+      </div>
+    </header>
+    <main class="main" role="main">
+      <section class="section _pt0">
+        <div class="container">
+          <ul class="breadcrumbs" role="list">
+            <li class="breadcrumbs__item" role="listitem"><a class="breadcrumbs__link" href="home.html" role="link">Главная</a></li>
+            <li class="breadcrumbs__item" role="listitem"><a class="breadcrumbs__link" href="catalog.html" role="link">Каталог</a></li>
+            <li class="breadcrumbs__item" role="listitem">Свадебные торты</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section product-page">
+        <div class="container">
+          <h1 class="_center">Торт Batman №4</h1>
+          <div class="product-page__header">
+            <div class="product-page__cols">
+              <div class="product-page__col _left">
+                <div class="product-page__gallery swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                          <picture class="product-page__picture">
+                            <source type="image/webp" data-srcset="img/tmp/webp/product-page@2x.webp 2x, img/tmp/webp/product-page.webp 1x" srcset="">
+                            <source type="image/jpeg" data-srcset="img/tmp/product-page@2x.jpg 2x, img/tmp/product-page.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-page.jpg" src="" alt="" width="350" height="350">
+                          </picture>
+                    </div>
+                    <div class="swiper-slide">
+                          <picture class="product-page__picture">
+                            <source type="image/webp" data-srcset="img/tmp/webp/product-page@2x.webp 2x, img/tmp/webp/product-page.webp 1x" srcset="">
+                            <source type="image/jpeg" data-srcset="img/tmp/product-page@2x.jpg 2x, img/tmp/product-page.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-page.jpg" src="" alt="" width="350" height="350">
+                          </picture>
+                    </div>
+                    <div class="swiper-slide">
+                          <picture class="product-page__picture">
+                            <source type="image/webp" data-srcset="img/tmp/webp/product-page@2x.webp 2x, img/tmp/webp/product-page.webp 1x" srcset="">
+                            <source type="image/jpeg" data-srcset="img/tmp/product-page@2x.jpg 2x, img/tmp/product-page.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-page.jpg" src="" alt="" width="350" height="350">
+                          </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-page__thumbs swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                          <picture class="product-page__picture">
+                            <source type="image/webp" data-srcset="img/tmp/webp/product-page-thumb@2x.webp 2x, img/tmp/webp/product-page-thumb.webp 1x" srcset="">
+                            <source type="image/jpeg" data-srcset="img/tmp/product-page-thumb@2x.jpg 2x, img/tmp/product-page-thumb.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-page-thumb.jpg" src="" alt="" width="90" height="90">
+                          </picture>
+                    </div>
+                    <div class="swiper-slide">
+                          <picture class="product-page__picture">
+                            <source type="image/webp" data-srcset="img/tmp/webp/product-page-thumb@2x.webp 2x, img/tmp/webp/product-page-thumb.webp 1x" srcset="">
+                            <source type="image/jpeg" data-srcset="img/tmp/product-page-thumb@2x.jpg 2x, img/tmp/product-page-thumb.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-page-thumb.jpg" src="" alt="" width="90" height="90">
+                          </picture>
+                    </div>
+                    <div class="swiper-slide">
+                          <picture class="product-page__picture">
+                            <source type="image/webp" data-srcset="img/tmp/webp/product-page-thumb@2x.webp 2x, img/tmp/webp/product-page-thumb.webp 1x" srcset="">
+                            <source type="image/jpeg" data-srcset="img/tmp/product-page-thumb@2x.jpg 2x, img/tmp/product-page-thumb.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-page-thumb.jpg" src="" alt="" width="90" height="90">
+                          </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-page__col _right">
+                <div class="product-page__controls">
+                  <div class="product-page__controls-cols">
+                    <div class="product-page__controls-col _left">
+                      <div class="product-page__chooses">
+                        <div class="product-page__chooses-block">
+                          <div class="product-page__chooses-title">Вес:</div>
+                          <div class="product-page__chooses-count">
+                                <div class="product-page__count" data-count-parent data-count-interval=".5" data-count-min=".5">
+                                  <button class="product-page__count-btn" type="button" role="button" data-count data-count-minus>-</button>
+                                  <input class="product-page__count-input" type="text" name="count" value="2.5" readonly data-count-input>
+                                  <button class="product-page__count-btn" type="button" role="button" data-count data-count-plus>+</button>
+                                </div>
+                            <div class="product-page__chooses-count-note">На 13 человек</div>
+                          </div>
+                        </div>
+                        <div class="product-page__chooses-block">
+                          <div class="product-page__chooses-title">Начинка:</div>
+                              <div class="product-page__filling select" data-select-parent>
+                                <button class="select__current" data-select data-toggle>
+                                  <div class="product-page__filling-item">
+                                        <picture>
+                                          <source type="image/webp" data-srcset="img/tmp/webp/filling@2x.webp 2x, img/tmp/webp/filling.webp 1x" srcset="">
+                                          <source type="image/jpeg" data-srcset="img/tmp/filling@2x.jpg 2x, img/tmp/filling.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/filling.jpg" src="" alt="" width="27" height="27">
+                                        </picture>Йогуртовая с вишней
+                                  </div>
+                                </button>
+                                <div class="select__variants">
+                                  <div class="select__variant">
+                                    <input type="radio" name="nach" value="" id="nach-1" checked>
+                                    <label for="nach-1">
+                                      <div class="product-page__filling-item">
+                                            <picture>
+                                              <source type="image/webp" data-srcset="img/tmp/webp/filling@2x.webp 2x, img/tmp/webp/filling.webp 1x" srcset="">
+                                              <source type="image/jpeg" data-srcset="img/tmp/filling@2x.jpg 2x, img/tmp/filling.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/filling.jpg" src="" alt="" width="27" height="27">
+                                            </picture>Йогуртовая с вишней
+                                      </div>
+                                    </label>
+                                  </div>
+                                  <div class="select__variant">
+                                    <input type="radio" name="nach" value="" id="nach-2">
+                                    <label for="nach-2">
+                                      <div class="product-page__filling-item">
+                                            <picture>
+                                              <source type="image/webp" data-srcset="img/tmp/webp/filling@2x.webp 2x, img/tmp/webp/filling.webp 1x" srcset="">
+                                              <source type="image/jpeg" data-srcset="img/tmp/filling@2x.jpg 2x, img/tmp/filling.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/filling.jpg" src="" alt="" width="27" height="27">
+                                            </picture>Молочная
+                                      </div>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                          <div class="product-page__filling-note">Фирменная начинка (+300р./кг)</div>
+                        </div>
+                        <div class="product-page__chooses-block">
+                          <div class="product-page__chooses-info">
+                                <picture class="product-page__chooses-info-picture">
+                                  <source type="image/webp" data-srcset="img/tmp/webp/product-chooses-info@2x.webp 2x, img/tmp/webp/product-chooses-info.webp 1x" srcset="">
+                                  <source type="image/jpeg" data-srcset="img/tmp/product-chooses-info@2x.jpg 2x, img/tmp/product-chooses-info.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-chooses-info.jpg" src="" alt="" width="160" height="141">
+                                </picture>
+                            <div class="product-page__chooses-info-text">
+                              <p>Нежный бисквит с лавандовыми нотками, яркое черносмородиновое конфи с ягодами черники и сливочно-творожный крем с белым шоколадом</p>
+                              <p class="_small"><em>Яйца, сахар, мука, кефир, масло растительное, цветки лаванды, разрыхлитель, сыр творожный, сметана, сливки, шоколад белый, желатин, пюре черносмородиновое, черника, пектин</em></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-page__chooses-block">
+                          <div class="product-page__chooses-title">Надпись на торте:</div>
+                          <input class="input" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-page__controls-col _right">
+                      <form class="product-page__cart">
+                        <div class="product-page__price">4 580 ₽</div>
+                        <button class="product-page__order" type="button" role="button">Оформить заказ</button>
+                        <button class="product-page__to-cart" type="button" data-fancybox data-src="#add-to-cart" data-type="inline">В корзину
+                          <svg width="20" height="21">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                          </svg>
+                        </button>
+                        <div class="product-page__include">
+                          <p>Все включено!</p>
+                          <p>В цену торта включено оформление, фигурки, надписи, стандартный поднос, коробка. При изменении оформления, стоимость рассчитывается индивидуально по вашим предпочтениям. Цветовую гамму торта можем подобрать под Ваши предпочтения.</p>
+                        </div>
+                        <div class="product-page__actions">
+                          <button class="product-page__action" type="button" role="button">
+                            <div class="product-page__action-icon">
+                              <svg width="16" height="14">
+                                <use xlink:href="img/sprite.svg#favourite"></use>
+                              </svg>
+                            </div>добавить в избранное
+                          </button>
+                          <button class="product-page__action" type="button" role="button">
+                            <div class="product-page__action-icon">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#compare"></use>
+                              </svg>
+                            </div>добавить к сравнению
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-page__content" data-tab-parent>
+            <div class="product-page__tabs no-scroll">
+              <button class="product-page__tab _active" type="button" role="button" data-tab="tab-1">Описание</button>
+              <button class="product-page__tab" type="button" role="button" data-tab="tab-2">Оплата</button>
+              <button class="product-page__tab" type="button" role="button" data-tab="tab-3">Доставка</button>
+              <button class="product-page__tab" type="button" role="button" data-tab="tab-4">Вес и ярусы</button>
+              <button class="product-page__tab" type="button" role="button" data-tab="tab-5">Памятка употребления</button>
+            </div>
+            <div class="product-page__tabs-content _active" data-tab-content="tab-1">
+              <h3 class="h3" role="heading">Характеристики товара:</h3>
+              <div class="product-page__params-cols">
+                <div class="product-page__params-col">
+                  <div class="product-page__params">
+                    <div class="product-page__param"><span>Форма:</span><span>Круг</span></div>
+                    <div class="product-page__param"><span>Срок хранения при t 0+4:</span><span>5 суток</span></div>
+                    <div class="product-page__param"><span>Упаковка:</span><span>Ламинированный поднос, Картонная упаковка</span></div>
+                    <div class="product-page__param"><span>Производитель:</span><span>Аветорт (под заказ)</span></div>
+                    <div class="product-page__param"><span>Тематика:</span><span>Торты на день рождения</span></div>
+                    <div class="product-page__param"><span>Число ярусов:</span><span>3</span></div>
+                    <div class="product-page__param"><span>Оформление:</span><span>Аппликация, Живые цветы, Пищевая печать, Поздравительные надписи, Фигурки, Фигурная лепка,</span></div>
+                    <div class="product-page__param"><span>Начинка на выбор:</span><span>На выбор (на каждый ярус)</span></div>
+                  </div>
+                </div>
+                <div class="product-page__params-col">
+                  <p>Торт "Пчелка" - для маленьких непоседливых принцесс. Замечательная улыбчивая пчелка спешит на День Рождения Вашего малыша с горшочком меда. Самый вкусный мед - только недавно пчелка с своими подружками собрала нектар. А сейчас пчелка присела ненадолго отдохнуть и посмотреть, какая красота вокруг нее: цветы, насекомые, деревенская изгородь. В этот день у всех прекрасное настроение: даже розовые цветочки улыбаются. Вокруг летают миниатюрные бабочки. Этот тортик особенно понравится Вашей дочке, если она любит проводить время на природе. Настоящие пчелы могут больно ужалить, а наша пчелка никогда не делает ничего плохого. Хотите поднять настроение дочке и её гостям? Это так легко сделать в тортом "Пчелка". Купить его можно на сайте кондитерской "Алтуфьево".</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-page__tabs-content" data-tab-content="tab-2">
+              <h3 class="h3" role="heading">Оплата</h3>
+              <p>ЗАКАЗ МОЖНО ОПЛАТИТЬ У НАС НА ПУНКТЕ САМОВЫВОЗА ЛИБО ДИСТАНЦИОННО</p>
+              <p>Время работы офиса: с 9.00 до 21.00 ч, ежедневно без выходных и праздничных дней.</p>
+              <p>Способы оплаты:</p>
+              <ul>
+                <li>Оплата картой</li>
+                <li>Наличными</li>
+                <li>Оплата по расчётному счёту</li>
+                <li>Оплата через Юкассу</li>
+              </ul>
+            </div>
+            <div class="product-page__tabs-content" data-tab-content="tab-3">
+              <h3 class="h3" role="heading">Доставка</h3>
+              <p>Доставка кондитерских изделий осуществляется в один из выбранных временных интервалов, с 9:00 до 12:00/ с 12:00 до 15:00/ с 15:00 до 18:00/ с 18:00 до 21:00 в любой район Москвы в пределах МКАД, и в города Московской области до 70 км. от МКАД.</p>
+              <p>При заказе торта от 3 000 р. - бесплатная доставка по Москве (внутри МКАД) либо скидка 10% при самовывозе.</p>
+              <p>Стоимость доставки десертов - от 500 р. по Москве.</p>
+              <p>По Московской области стоимость доставки десертов и тортов рассчитывается индивидуально.</p>
+            </div>
+            <div class="product-page__tabs-content" data-tab-content="tab-4">
+              <h3 class="h3" role="heading">Вес и ярусы</h3>
+              <div class="product-page__stage-cols">
+                <div class="product-page__stage-col">
+                                <div class="product-page__stage">
+                                  <div class="product-page__stage-icon">
+                                    <svg width="190" height="165">
+                                      <use xlink:href="img/sprite.svg#stage-1"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="product-page__stage-title">1 ярус</div>
+                                  <div class="product-page__stage-items">
+                                    <div class="product-page__stage-item">
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#weight"></use>
+                                      </svg>2–4 кг
+                                    </div>
+                                    <div class="product-page__stage-item">
+                                      <div class="product-page__stage-item-icon"></div>
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#people"></use>
+                                      </svg>до 20 человек
+                                    </div>
+                                  </div>
+                                </div>
+                </div>
+                <div class="product-page__stage-col">
+                                <div class="product-page__stage">
+                                  <div class="product-page__stage-icon">
+                                    <svg width="190" height="165">
+                                      <use xlink:href="img/sprite.svg#stage-2"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="product-page__stage-title">2 яруса</div>
+                                  <div class="product-page__stage-items">
+                                    <div class="product-page__stage-item">
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#weight"></use>
+                                      </svg>5–7 кг
+                                    </div>
+                                    <div class="product-page__stage-item">
+                                      <div class="product-page__stage-item-icon"></div>
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#people"></use>
+                                      </svg>до 35 человек
+                                    </div>
+                                  </div>
+                                </div>
+                </div>
+                <div class="product-page__stage-col">
+                                <div class="product-page__stage">
+                                  <div class="product-page__stage-icon">
+                                    <svg width="190" height="165">
+                                      <use xlink:href="img/sprite.svg#stage-3"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="product-page__stage-title">3 яруса</div>
+                                  <div class="product-page__stage-items">
+                                    <div class="product-page__stage-item">
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#weight"></use>
+                                      </svg>8–11 кг
+                                    </div>
+                                    <div class="product-page__stage-item">
+                                      <div class="product-page__stage-item-icon"></div>
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#people"></use>
+                                      </svg>до 55 человек
+                                    </div>
+                                  </div>
+                                </div>
+                </div>
+                <div class="product-page__stage-col">
+                                <div class="product-page__stage">
+                                  <div class="product-page__stage-icon">
+                                    <svg width="190" height="165">
+                                      <use xlink:href="img/sprite.svg#stage-4"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="product-page__stage-title">4 яруса</div>
+                                  <div class="product-page__stage-items">
+                                    <div class="product-page__stage-item">
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#weight"></use>
+                                      </svg>12–15 кг
+                                    </div>
+                                    <div class="product-page__stage-item">
+                                      <div class="product-page__stage-item-icon"></div>
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#people"></use>
+                                      </svg>до 75 человек
+                                    </div>
+                                  </div>
+                                </div>
+                </div>
+                <div class="product-page__stage-col">
+                                <div class="product-page__stage">
+                                  <div class="product-page__stage-icon">
+                                    <svg width="190" height="165">
+                                      <use xlink:href="img/sprite.svg#stage-5"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="product-page__stage-title">5 ярусов</div>
+                                  <div class="product-page__stage-items">
+                                    <div class="product-page__stage-item">
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#weight"></use>
+                                      </svg>15–20 кг
+                                    </div>
+                                    <div class="product-page__stage-item">
+                                      <div class="product-page__stage-item-icon"></div>
+                                      <svg width="28" height="24">
+                                        <use xlink:href="img/sprite.svg#people"></use>
+                                      </svg>до 100 человек
+                                    </div>
+                                  </div>
+                                </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-page__tabs-content" data-tab-content="tab-5">
+              <h3 class="h3" role="heading">Памятка употребления</h3>
+              <p>Готовый торт хранится только в холодильнике.</p>
+              <p>Допустимый температурный режим от 2-х до 6-ти градусов Цельсия</p>
+              <p>Предельный срок хранения – 72 часа.</p>
+              <p>Перед употреблением торта предварительно необходимо снять все несъедобные детали, если они присутствуют на торте (мы о них предупреждаем перед отдачей торта и непосредственно при обсуждении заказа).</p>
+              <p>Не употребляйте оставшийся торт на третьи и более сутки и, тем более, не давайте такой торт детям (При изготовлении использованы натуральные продукты без консервантов, и имеют ограниченный срок хранения).</p>
+              <p>Сахарная мастика для покрытия торта – съедобная красивая упаковка и кушать ее можно, но не обязательно. Она легко снимается с кусочка. Оцените по достоинству вкус начинки.</p>
+              <p>Для любителей ярких, порой кислотных цветов. Для получения яркого цвета требуется использовать много красителя, вы должны это учитывать и понимать, особенно при выборе детских тортов. Современный уровень развития пищевого производства обеспечивает кондитеров натуральными и абсолютно безвредными пищевыми красителями, но при этом они не перестают быть красителями.</p>
+              <p>Не забудьте предупредить кондитера о том, на что у ребенка есть аллергия (если есть).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section interesting">
+        <div class="container">
+          <div class="section__header-carousel _mobile-no-nav">
+                <button class="navigation__btn interesting__navigation _prev" type="button" role="button">
+                  <svg width="27" height="20">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+            <h2 class="h1 _center">Сопутствующие товары</h2>
+                <button class="navigation__btn interesting__navigation _next" type="button" role="button">
+                  <svg width="27" height="20">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+          </div>
+          <div class="interesting__carousel section__carousel swiper _mobile-full _shadow">
+            <div class="swiper-wrapper">
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-related@2x.webp 2x, img/tmp/webp/product-related.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-related@2x.jpg 2x, img/tmp/product-related.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-related.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                        </div><a class="product__title" href="product.html" role="link">Цифра-топпер 0</a>
+                        <div class="product__text">Альтернатива свечам-цифрам. Объёмная фольгированная фигура...</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">129 ₽</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-related@2x.webp 2x, img/tmp/webp/product-related.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-related@2x.jpg 2x, img/tmp/product-related.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-related.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                        </div><a class="product__title" href="product.html" role="link">Свеча цифра 1</a>
+                        <div class="product__text">Свеча на пике в форме цифры. Пусть у Вашего именинника будет...</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">129 ₽</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-related@2x.webp 2x, img/tmp/webp/product-related.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-related@2x.jpg 2x, img/tmp/product-related.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-related.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                        </div><a class="product__title" href="product.html" role="link">Коробка №2</a>
+                        <div class="product__text">Цвет атласной ленты может быть изменен</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">129 ₽</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-related@2x.webp 2x, img/tmp/webp/product-related.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-related@2x.jpg 2x, img/tmp/product-related.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-related.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                        </div><a class="product__title" href="product.html" role="link">Фонтан из 7 шаров</a>
+                        <div class="product__text"></div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">129 ₽</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-related@2x.webp 2x, img/tmp/webp/product-related.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-related@2x.jpg 2x, img/tmp/product-related.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-related.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                        </div><a class="product__title" href="product.html" role="link">Цифра-топпер 0</a>
+                        <div class="product__text">Альтернатива свечам-цифрам. Объёмная фольгированная фигура...</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">129 ₽</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-related@2x.webp 2x, img/tmp/webp/product-related.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-related@2x.jpg 2x, img/tmp/product-related.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-related.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                        </div><a class="product__title" href="product.html" role="link">Свеча цифра 1</a>
+                        <div class="product__text">Свеча на пике в форме цифры. Пусть у Вашего именинника будет...</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">129 ₽</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-related@2x.webp 2x, img/tmp/webp/product-related.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-related@2x.jpg 2x, img/tmp/product-related.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-related.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                        </div><a class="product__title" href="product.html" role="link">Коробка №2</a>
+                        <div class="product__text">Цвет атласной ленты может быть изменен</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">129 ₽</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-related@2x.webp 2x, img/tmp/webp/product-related.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-related@2x.jpg 2x, img/tmp/product-related.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-related.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                        </div><a class="product__title" href="product.html" role="link">Фонтан из 7 шаров</a>
+                        <div class="product__text"></div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">129 ₽</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section interesting">
+        <div class="container">
+          <div class="section__header-carousel _mobile-no-nav">
+                <button class="navigation__btn interesting__navigation _prev" type="button" role="button">
+                  <svg width="27" height="20">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+            <h2 class="h1 _center">Вам также может быть интересно</h2>
+                <button class="navigation__btn interesting__navigation _next" type="button" role="button">
+                  <svg width="27" height="20">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+          </div>
+          <div class="interesting__carousel section__carousel swiper _mobile-full _shadow">
+            <div class="swiper-wrapper">
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-carousel@2x.webp 2x, img/tmp/webp/product-carousel.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-carousel@2x.jpg 2x, img/tmp/product-carousel.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-carousel.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                          <button class="product__fast-view" type="button" role="button">Быстрый просмотр</button>
+                          <div class="product__actions _left">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Сравнить">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#compare"></use>
+                              </svg>
+                            </button>
+                            <div class="product__tags">
+                              <div class="product__action _new _fill" type="button" role="button">
+                                <svg width="21" height="8">
+                                  <use xlink:href="img/sprite.svg#new"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _sale _fill" type="button" role="button">
+                                <svg width="16" height="14">
+                                  <use xlink:href="img/sprite.svg#sale"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _eco _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#eco"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _medal _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#medal"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _hit _fill" type="button" role="button">
+                                <svg width="16" height="16">
+                                  <use xlink:href="img/sprite.svg#hit"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product__actions _right">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Добавить в избранное">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#favourite"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div><a class="product__title" href="product.html" role="link">Торт без мастики №1</a>
+                        <div class="product__text">Торт без мастики с украшением различными конфетками</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">4 580 ₽/кг</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-carousel@2x.webp 2x, img/tmp/webp/product-carousel.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-carousel@2x.jpg 2x, img/tmp/product-carousel.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-carousel.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                          <button class="product__fast-view" type="button" role="button">Быстрый просмотр</button>
+                          <div class="product__actions _left">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Сравнить">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#compare"></use>
+                              </svg>
+                            </button>
+                            <div class="product__tags">
+                              <div class="product__action _new _fill" type="button" role="button">
+                                <svg width="21" height="8">
+                                  <use xlink:href="img/sprite.svg#new"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _sale _fill" type="button" role="button">
+                                <svg width="16" height="14">
+                                  <use xlink:href="img/sprite.svg#sale"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _eco _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#eco"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _medal _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#medal"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _hit _fill" type="button" role="button">
+                                <svg width="16" height="16">
+                                  <use xlink:href="img/sprite.svg#hit"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product__actions _right">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Добавить в избранное">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#favourite"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div><a class="product__title" href="product.html" role="link">Торт без мастики №1</a>
+                        <div class="product__text">Торт без мастики с украшением различными конфетками</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">4 580 ₽/кг</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-carousel@2x.webp 2x, img/tmp/webp/product-carousel.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-carousel@2x.jpg 2x, img/tmp/product-carousel.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-carousel.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                          <button class="product__fast-view" type="button" role="button">Быстрый просмотр</button>
+                          <div class="product__actions _left">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Сравнить">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#compare"></use>
+                              </svg>
+                            </button>
+                            <div class="product__tags">
+                              <div class="product__action _new _fill" type="button" role="button">
+                                <svg width="21" height="8">
+                                  <use xlink:href="img/sprite.svg#new"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _sale _fill" type="button" role="button">
+                                <svg width="16" height="14">
+                                  <use xlink:href="img/sprite.svg#sale"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _eco _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#eco"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _medal _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#medal"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _hit _fill" type="button" role="button">
+                                <svg width="16" height="16">
+                                  <use xlink:href="img/sprite.svg#hit"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product__actions _right">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Добавить в избранное">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#favourite"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div><a class="product__title" href="product.html" role="link">Торт без мастики №1</a>
+                        <div class="product__text">Торт без мастики с украшением различными конфетками</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">4 580 ₽/кг</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-carousel@2x.webp 2x, img/tmp/webp/product-carousel.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-carousel@2x.jpg 2x, img/tmp/product-carousel.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-carousel.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                          <button class="product__fast-view" type="button" role="button">Быстрый просмотр</button>
+                          <div class="product__actions _left">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Сравнить">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#compare"></use>
+                              </svg>
+                            </button>
+                            <div class="product__tags">
+                              <div class="product__action _new _fill" type="button" role="button">
+                                <svg width="21" height="8">
+                                  <use xlink:href="img/sprite.svg#new"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _sale _fill" type="button" role="button">
+                                <svg width="16" height="14">
+                                  <use xlink:href="img/sprite.svg#sale"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _eco _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#eco"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _medal _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#medal"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _hit _fill" type="button" role="button">
+                                <svg width="16" height="16">
+                                  <use xlink:href="img/sprite.svg#hit"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product__actions _right">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Добавить в избранное">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#favourite"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div><a class="product__title" href="product.html" role="link">Торт без мастики №1</a>
+                        <div class="product__text">Торт без мастики с украшением различными конфетками</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">4 580 ₽/кг</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-carousel@2x.webp 2x, img/tmp/webp/product-carousel.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-carousel@2x.jpg 2x, img/tmp/product-carousel.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-carousel.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                          <button class="product__fast-view" type="button" role="button">Быстрый просмотр</button>
+                          <div class="product__actions _left">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Сравнить">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#compare"></use>
+                              </svg>
+                            </button>
+                            <div class="product__tags">
+                              <div class="product__action _new _fill" type="button" role="button">
+                                <svg width="21" height="8">
+                                  <use xlink:href="img/sprite.svg#new"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _sale _fill" type="button" role="button">
+                                <svg width="16" height="14">
+                                  <use xlink:href="img/sprite.svg#sale"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _eco _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#eco"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _medal _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#medal"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _hit _fill" type="button" role="button">
+                                <svg width="16" height="16">
+                                  <use xlink:href="img/sprite.svg#hit"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product__actions _right">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Добавить в избранное">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#favourite"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div><a class="product__title" href="product.html" role="link">Торт без мастики №1</a>
+                        <div class="product__text">Торт без мастики с украшением различными конфетками</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">4 580 ₽/кг</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+              <div class="best-products__slide swiper-slide">
+                    <article class="product" role="article">
+                      <div class="product__col">
+                        <div class="product__img">
+                              <picture class="product__picture">
+                                <source type="image/webp" data-srcset="img/tmp/webp/product-carousel@2x.webp 2x, img/tmp/webp/product-carousel.webp 1x" srcset="">
+                                <source type="image/jpeg" data-srcset="img/tmp/product-carousel@2x.jpg 2x, img/tmp/product-carousel.jpg 1x" srcset=""><img class="lazy" data-src="img/tmp/product-carousel.jpg" src="" alt="" width="255" height="307">
+                              </picture>
+                          <button class="product__fast-view" type="button" role="button">Быстрый просмотр</button>
+                          <div class="product__actions _left">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Сравнить">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#compare"></use>
+                              </svg>
+                            </button>
+                            <div class="product__tags">
+                              <div class="product__action _new _fill" type="button" role="button">
+                                <svg width="21" height="8">
+                                  <use xlink:href="img/sprite.svg#new"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _sale _fill" type="button" role="button">
+                                <svg width="16" height="14">
+                                  <use xlink:href="img/sprite.svg#sale"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _eco _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#eco"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _medal _fill" type="button" role="button">
+                                <svg width="18" height="19">
+                                  <use xlink:href="img/sprite.svg#medal"></use>
+                                </svg>
+                              </div>
+                              <div class="product__action _hit _fill" type="button" role="button">
+                                <svg width="16" height="16">
+                                  <use xlink:href="img/sprite.svg#hit"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product__actions _right">
+                            <button class="product__action _opacity" type="button" role="button" aria-label="Добавить в избранное">
+                              <svg width="16" height="16">
+                                <use xlink:href="img/sprite.svg#favourite"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div><a class="product__title" href="product.html" role="link">Торт без мастики №1</a>
+                        <div class="product__text">Торт без мастики с украшением различными конфетками</div>
+                      </div>
+                      <form class="product__controls" role="form">
+                        <div class="product__price">4 580 ₽/кг</div>
+                        <button class="product__to-cart" type="button" role="button">Заказать</button>
+                      </form>
+                    </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__cols">
+          <div class="footer__col _left">
+            <nav class="footer__nav" role="navigation">
+              <ul class="footer__list" role="list">
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="delivery.html" role="link">Доставка</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="payment.html" role="link">Оплата</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="sales.html" role="link">Акции</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="prices.html" role="link">Цены</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="filings.html" role="link">Начинки</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="catalog.html" role="link">Каталог</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="#" role="link">Частые вопросы</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__nav" role="navigation">
+              <ul class="footer__list" role="list">
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="about.html" role="link">О нас</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="#" role="link">Наша команда</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="#" role="link">Новости</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="reviews.html" role="link">Отзывы</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="partners.html" role="link">Партнерам</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="#" role="link">Сертификаты и лицензии</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="#" role="link">Соглашение и правила</a></li>
+                    <li class="footer__list-item" role="listitem"><a class="footer__list-link" href="contacts.html" role="link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__col _right">
+            <address class="footer__address">
+              <div class="footer__address-item">Москва, Азовская 24 к.3, ТРЦ Азовский, 3 этаж, м.Севастопольская</div>
+              <div class="footer__address-item _semibold">Ежедневно 10:00 - 21:00</div>
+            </address>
+            <address class="footer__contacts">
+              <div class="footer__contacts-links"><a class="footer__contacts-link _phone" href="tel:+74951810801" role="link">+7 (495) 181-08-01</a><a class="footer__contacts-link" href="mailto:zakaz@mrginger.ru" role="link">zakaz@mrginger.ru</a></div>
+              <div class="footer__socials"><a class="footer__social" href="https://vk.com/" target="_blank" rel="nofollow" role="link" aria-label="vk.com">
+                  <svg width="28" height="28">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg></a><a class="footer__social" href="https://instagram.com/" target="_blank" rel="nofollow" role="link" aria-label="instagram.com">
+                  <svg width="28" height="28">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg></a></div>
+            </address>
+            <div class="footer__info">
+              <div class="footer__logo">
+                <svg width="157" height="88">
+                  <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+              </div>
+              <div class="footer__copyright">© 2020 Mr.Ginger</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="add-to-cart">
+      <div class="modal__thankyou">
+        <div class="modal__icon">
+          <svg width="66" height="66">
+            <use xlink:href="img/sprite.svg#thankyou"></use>
+          </svg>
+        </div>
+        <div class="modal__title h1">Товар добавлен!</div>
+        <div class="modal__text">Товар успешно добавлен в корзину</div>
+        <div class="modal__btns">
+          <button class="modal__btn _bordered" type="button" role="button" data-fancybox-close>Продолжить покупки</button><a class="modal__btn _blue" href="cart.html" role="link">Перейти в корзину
+            <svg width="21" height="20">
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-order-success">
+      <div class="modal__thankyou">
+        <div class="modal__title h1">Спасибо! <br>Ваш заказ №1454 принят.</div>
+        <div class="modal__text">Номер заказа отправлен на почту. <br>В ближайшее время наш менеджер свяжется с Вами.</div>
+        <div class="modal__btns _center"><a class="modal__btn _blue" href="catalog.html">Вернуться к покупкам</a></div>
+      </div>
+    </div>
+    <div class="modal" id="modal-reviews-success">
+      <div class="modal__thankyou">
+        <div class="modal__title h1">Ваш отзыв принят!</div>
+        <div class="modal__text">Спасибо за Ваш отзыв.</div>
+        <div class="modal__btns _center">
+          <button class="modal__btn _blue" type="button" role="button" data-fancybox-close>Вернуться к покупкам</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-callback-success">
+      <div class="modal__thankyou">
+        <div class="modal__title h1">Спасибо! Мы с Вами свяжемся.</div>
+        <div class="modal__btns _center">
+          <button class="modal__btn _blue" type="button" role="button" data-fancybox-close>Вернуться назад</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs/lazyload.min.js"></script>
+    <script src="js/libs/swiper-bundle.min.js"></script>
+    <script src="js/libs/fancybox.umd.js"></script>
+    <script src="js/libs/datepicker-full.min.js"></script>
+    <script src="js/libs/masonry.pkgd.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
