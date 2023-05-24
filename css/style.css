@@ -3105,6 +3105,10 @@ h3,
   display: none; }
   .order__radio input:checked + label {
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2); }
+    .order__radio input:checked + label svg {
+      fill: #7777A3; }
+      .order__radio input:checked + label svg path._stroke {
+        stroke: #7777A3; }
 .order__radio label {
   min-height: 190px;
   background: #F9F9FC;
@@ -3123,12 +3127,15 @@ h3,
       min-height: 137px;
       font-size: 1rem; } }
   .order__radio label svg {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    fill: #3F3F59; }
     @media (max-width: 700px) {
       .order__radio label svg {
         margin-bottom: 10px;
         height: 64px;
         width: auto; } }
+    .order__radio label svg path._stroke {
+      stroke: #3F3F59; }
 .order__delivery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

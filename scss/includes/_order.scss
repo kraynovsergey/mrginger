@@ -65,6 +65,16 @@
 			&:checked {
 				& + label {
 					box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+
+					& svg {
+						fill: $color_secondary;
+
+						& path {
+							&._stroke {
+								stroke: $color_secondary;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -90,11 +100,18 @@
 
 			& svg {
 				margin-bottom: 15px;
+				fill: $color_footer;
 
 				@media (max-width: 700px) {
 					margin-bottom: 10px;
 					height: 64px;
 					width: auto;
+				}
+
+				& path {
+					&._stroke {
+						stroke: $color_footer;
+					}
 				}
 			}
 		}
