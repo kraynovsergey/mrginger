@@ -181,7 +181,7 @@
 			let itemData = item.getAttribute('data-item');
 
 			new Swiper(item, {
-				loop: true,
+				loop: false,
 				breakpoints: {
 					0: {
 						slidesPerView: 'auto',
