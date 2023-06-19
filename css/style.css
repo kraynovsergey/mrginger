@@ -444,6 +444,9 @@ body .hidden {
     height: 0;
     display: none; }
 
+.swiper {
+  width: 100%; }
+
 /* Layouts */
 h1,
 .h1 {
