@@ -411,7 +411,7 @@
 					});
 				} else {
 					items.forEach(item => {
-						itemValue.indexOf(item.getAttribute('data-filter-item')) ?
+						item.getAttribute('data-filter-item').indexOf(itemValue) >= 0 ?
 							item.classList.add('_active') : item.classList.remove('_active');
 					});
 				}
